@@ -9,11 +9,13 @@ interface AlbumProps {
 const album: React.SFC<AlbumProps> = ({ data }) => {
   return (
     <li className="album">
-      <div className="album__info">
-        <span className="album__title">{data.title}</span>
-        <span className="album__year">{data.year}</span>
-      </div>
-      <img src={data.image} alt={data.title} />
+      <Link to="/stream/" state={{ data }}>
+        <div className="album__info">
+          <span className="album__title">{data.title}</span>
+          <span className="album__year">{data.year}</span>
+        </div>
+        <img src={data.image} alt={data.title} />
+      </Link>
     </li>
   );
 };

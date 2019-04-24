@@ -1,6 +1,41 @@
 
 @import '../../styles/colors';
 
+@keyframes flicker {
+    10% {
+        border: 1px solid darken($secondaryText, 40%);
+    }
+    20% {
+        border: 1px solid darken($secondaryText, 80%);
+    }
+    50% {
+        border: 1px solid darken($secondaryText, 40%);
+    }
+    60% {
+        border: 1px solid darken($secondaryText, 60%);
+    }
+    70% {
+        border: 1px solid darken($secondaryText, 45%);
+    }
+    75% {
+        border: 1px solid darken($secondaryText, 60%);
+    }
+    80% {
+        border: 1px solid darken($red, 30%);
+    }
+}
+
+@keyframes redText {
+    49% {
+        color: $secondaryText
+    };
+    50% { color:$red};
+    51% {
+        color: $secondaryText
+    };
+}
+
+
 .album-list {
     padding:0px;
     display:grid;
@@ -12,7 +47,12 @@
     list-style: none;
     cursor: pointer;
     &:hover {
-        border:1px solid darken($secondaryText, 30%);
+        border:1px solid darken($secondaryText, 100%);
+        animation-name: flicker;
+        animation-duration: .5s;
+        animation-timing-function:step-end;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
         .album__info {
             visibility: visible;
         }
@@ -36,6 +76,14 @@
     color:$secondaryText;
 }
 
+.album__title {
+    animation-name: redText;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 .album__year {
     text-align:right;
 }
@@ -45,7 +93,6 @@
     width:100%;
     transition:all 0.4s;
 }
-
 
 
 
