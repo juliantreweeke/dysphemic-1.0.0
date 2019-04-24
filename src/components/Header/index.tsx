@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './Header.scss';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo-yellow-fill.png';
 
 interface HeaderProps {
   siteTitle?: string;
