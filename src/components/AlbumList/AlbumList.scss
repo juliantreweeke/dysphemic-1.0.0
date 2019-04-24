@@ -10,23 +10,40 @@
 
 .album {
     list-style: none;
+    cursor: pointer;
+    &:hover {
+        border:1px solid darken($secondaryText, 30%);
+        .album__info {
+            visibility: visible;
+        }
+        img {
+            filter: brightness(50%);
+        }
+    }   
 }
 
-.album__title {
-    color:$primaryText;
-    display: none;
+.album__info {
+    visibility: hidden;
+    padding:10px;
+    font-weight:800;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.album__title , .album__year {
+    color:$secondaryText;
+}
+
+.album__year {
+    text-align:right;
 }
 
 .album img {
     min-height:35vh;
     width:100%;
     transition:all 0.4s;
-    &:hover {
-        filter: brightness(50%);
-        .album__title {
-            display:block;
-        }
-    }
 }
 
 
