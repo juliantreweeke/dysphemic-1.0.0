@@ -41,7 +41,7 @@ class Layout extends React.Component<LayoutProps, {}> {
                 meta={[
                   {
                     name: 'description',
-                    content: 'Gatsby TypeScript Boilerplate Starter',
+                    content: 'Dysphemic website off electronic music producer',
                   },
                   { name: 'keywords', content: 'Gatsby, TypeScript, Starter' },
                 ]}

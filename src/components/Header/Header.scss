@@ -1,15 +1,43 @@
+
+@import '../../styles/colors';
+
 .header {
-    background-color: black;
+    background-color:$headerBg;
     padding: 1.45rem 1.0875rem;
+    // margin: 0 auto;
+    // max-width:960px;
+    // padding: 0px 1.0875rem 1.45rem;
 }
 
-.header__title {
-    max-width: 60rem;
-    margin-left: auto;
-    margin-right: auto;
+.header__content {
+    display: flex;
+    margin: 0 auto;
+    max-width:960px;
+    padding:40px 0;
 }
 
 .header__link {
-    color: white;
     text-decoration: none;
+}
+
+.header__image {
+    width:400px;
+}
+
+.header__nav {
+    margin-left: auto;
+    ul {
+        color:$bodyText;
+        list-style: none;
+        li {
+            display: inline-block;
+            padding: 0 1.4em 0 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header__image {
+        width:300px;
+    }
 }

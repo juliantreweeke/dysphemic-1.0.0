@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './Header.scss';
+import Logo from '../../images/logo.png';
 
 interface HeaderProps {
   siteTitle?: string;
@@ -12,11 +13,21 @@ class Header extends React.PureComponent<HeaderProps, {}> {
 
     return (
       <header className="header">
-        <h1 className="header__title">
+        <div className="header__content">
           <Link to="/" className="header__link">
-            {siteTitle}
+            <img className="header__image" src={Logo} alt={siteTitle} />
           </Link>
-        </h1>
+          <nav className="header__nav">
+            <ul>
+              <li>News</li>
+              <li>
+                <Link to="/music/">Music</Link>
+              </li>
+              <li>Merch</li>
+              <li>Shows</li>
+            </ul>
+          </nav>
+        </div>
       </header>
     );
   }

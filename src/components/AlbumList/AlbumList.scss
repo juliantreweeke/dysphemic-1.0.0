@@ -1,0 +1,29 @@
+
+@import '../../styles/colors';
+
+.album-list {
+    // display:flex;
+    // flex-direction: column;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
+}
+
+.album {
+    list-style: none;
+}
+
+.album img {
+    min-height:45vh;
+    width:100%;
+    transition:all 0.2s;
+    &:hover {
+        transform: scale(1.2)
+    }
+}
+
+
+
+
+
+
+
