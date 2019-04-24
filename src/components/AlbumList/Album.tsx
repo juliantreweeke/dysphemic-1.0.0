@@ -9,6 +9,7 @@ interface AlbumProps {
 const album: React.SFC<AlbumProps> = ({ data }) => {
   return (
     <li className="album">
+      <span className="album__title">{data.title}</span>
       <img src={data.image} alt={data.title} />
     </li>
   );

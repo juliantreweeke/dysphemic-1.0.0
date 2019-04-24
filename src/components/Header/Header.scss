@@ -27,8 +27,10 @@
 .header__nav {
     margin-left: auto;
     ul {
-        color:$bodyText;
+        font-weight: 800;
+        color:$primaryText;
         list-style: none;
+        font-size:20px;
         li {
             display: inline-block;
             padding: 0 1.4em 0 0;

@@ -1,9 +1,15 @@
+@import './colors';
+
 html {
     box-sizing: border-box;
     font: normal normal 400 1em/1.15 Arial, Helvetica, sans-serif;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color:$mainBg;
 }
 
 *,
@@ -20,6 +26,7 @@ details {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
+    color:$secondaryText;
 }
 
 body,

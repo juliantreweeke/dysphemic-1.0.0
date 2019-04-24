@@ -2,22 +2,30 @@
 @import '../../styles/colors';
 
 .album-list {
-    // display:flex;
-    // flex-direction: column;
+    padding:0px;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
+    grid-gap: 1em;
 }
 
 .album {
     list-style: none;
 }
 
+.album__title {
+    color:$primaryText;
+    display: none;
+}
+
 .album img {
-    min-height:45vh;
+    min-height:35vh;
     width:100%;
-    transition:all 0.2s;
+    transition:all 0.4s;
     &:hover {
-        transform: scale(1.2)
+        filter: brightness(50%);
+        .album__title {
+            display:block;
+        }
     }
 }
 

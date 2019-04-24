@@ -19,12 +19,12 @@ class Header extends React.PureComponent<HeaderProps, {}> {
           </Link>
           <nav className="header__nav">
             <ul>
-              <li>News</li>
+              <li>NEWS</li>
               <li>
-                <Link to="/music/">Music</Link>
+                <Link to="/music/">MUSIC</Link>
               </li>
-              <li>Merch</li>
-              <li>Shows</li>
+              <li>MERCH</li>
+              <li>SHOWS</li>
             </ul>
           </nav>
         </div>
