@@ -24,6 +24,7 @@ details {
 }
 
 h1 {
+    padding-top:15px;
     font-size: 2em;
     margin: 0.67em 0;
     color:$secondaryText;
@@ -50,8 +51,17 @@ pre {
     font-size: 1em;
 }
 
-a {
+a { 
     background-color: transparent;
+    text-decoration: none;
+
+    &:visited {
+        color: $primaryText;
+    }
+
+    &:active {
+        color: $white;
+    }
 }
 
 abbr[title] {

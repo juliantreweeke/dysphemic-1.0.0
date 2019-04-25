@@ -1,5 +1,8 @@
-import DruidImage from '../src/images/covers/druid.jpeg';
-import ZeusImage from '../src/images/covers/zeus.jpg';
+// import DruidImage from '../src/images/covers/druid.jpeg';
+// import ZeusImage from '../src/images/covers/zeus.jpg';
+
+const druidImage = require('../src/images/covers/druid.jpeg');
+const zeusImage = require('../src/images/covers/zeus.jpg');
 
 export const musicList = [
   {
@@ -7,7 +10,7 @@ export const musicList = [
     title: 'Zeus',
     year: 2017,
     downloadLink: 'http://www.google.com',
-    image: ZeusImage,
+    image: zeusImage,
     type: 'album',
   },
   {
@@ -15,87 +18,11 @@ export const musicList = [
     title: 'Druid Lizard',
     year: 2015,
     downloadLink: 'http://www.google.com',
-    image: DruidImage,
-    type: 'single',
-  },
-  {
-    id: 'blah',
-    title: 'Zeus',
-    year: 2017,
-    downloadLink: 'http://www.google.com',
-    image: ZeusImage,
-    type: 'album',
-  },
-  {
-    id: 'bagee',
-    title: 'Druid Lizard',
-    year: 2015,
-    downloadLink: 'http://www.google.com',
-    image: DruidImage,
-    type: 'single',
-  },
-  {
-    id: 'rewrew',
-    title: 'Druid Lizard',
-    year: 2015,
-    downloadLink: 'http://www.google.com',
-    image: DruidImage,
-    type: 'single',
-  },
-  {
-    id: 'rewrewe',
-    title: 'Druid Lizard',
-    year: 2015,
-    downloadLink: 'http://www.google.com',
-    image: DruidImage,
-    type: 'single',
-  },
-  {
-    id: 'zeus',
-    title: 'Zeus',
-    year: 2017,
-    downloadLink: 'http://www.google.com',
-    image: ZeusImage,
-    type: 'album',
-  },
-  {
-    id: 'druid-lizard',
-    title: 'Druid Lizard',
-    year: 2015,
-    downloadLink: 'http://www.google.com',
-    image: DruidImage,
-    type: 'single',
-  },
-  {
-    id: 'blah',
-    title: 'Zeus',
-    year: 2017,
-    downloadLink: 'http://www.google.com',
-    image: ZeusImage,
-    type: 'album',
-  },
-  {
-    id: 'bagee',
-    title: 'Druid Lizard',
-    year: 2015,
-    downloadLink: 'http://www.google.com',
-    image: DruidImage,
-    type: 'single',
-  },
-  {
-    id: 'rewrew',
-    title: 'Druid Lizard',
-    year: 2015,
-    downloadLink: 'http://www.google.com',
-    image: DruidImage,
-    type: 'single',
-  },
-  {
-    id: 'rewrewe',
-    title: 'Druid Lizard',
-    year: 2015,
-    downloadLink: 'http://www.google.com',
-    image: DruidImage,
+    image: druidImage,
     type: 'single',
   },
 ];
+
+// export const musicListWithoutImages = musicList.map( (album) => {
+//   return { ...album, image:undefined}
+// })

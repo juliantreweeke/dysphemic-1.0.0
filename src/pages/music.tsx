@@ -10,6 +10,7 @@ class Music extends React.PureComponent<{}, {}> {
     return (
       <Layout>
         <h1>Music</h1>
+
         <AlbumList data={musicList} />
       </Layout>
     );
