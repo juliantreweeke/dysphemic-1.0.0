@@ -1,25 +1,30 @@
-
 @import '../../styles/colors';
 
 @keyframes flicker {
     10% {
         border: 1px solid darken($secondaryText, 40%);
     }
+
     20% {
         border: 1px solid darken($secondaryText, 80%);
     }
+
     50% {
         border: 1px solid darken($secondaryText, 40%);
     }
+
     60% {
         border: 1px solid darken($secondaryText, 60%);
     }
+
     70% {
         border: 1px solid darken($secondaryText, 45%);
     }
+
     75% {
         border: 1px solid darken($secondaryText, 60%);
     }
+
     80% {
         border: 1px solid darken($red, 30%);
     }
@@ -28,17 +33,21 @@
 @keyframes redText {
     49% {
         color: $secondaryText
-    };
-    50% { color:$red};
+    }
+
+    50% {
+        color: $red
+    }
+
     51% {
         color: $secondaryText
-    };
+    }
 }
 
 
 .album-list {
-    padding:0px;
-    display:grid;
+    padding: 0px;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
     grid-gap: 1em;
 }
@@ -46,34 +55,38 @@
 .album {
     list-style: none;
     cursor: pointer;
+
     &:hover {
-        border:1px solid darken($secondaryText, 100%);
+        border: 1px solid darken($secondaryText, 100%);
         animation-name: flicker;
         animation-duration: .5s;
-        animation-timing-function:step-end;
+        animation-timing-function: step-end;
         animation-iteration-count: infinite;
         animation-direction: alternate;
+
         .album__info {
             visibility: visible;
         }
+
         img {
             filter: brightness(50%);
         }
-    }   
+    }
 }
 
 .album__info {
     visibility: hidden;
-    padding:10px;
-    font-weight:800;
+    padding: 10px;
+    font-weight: 800;
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 
-.album__title , .album__year {
-    color:$secondaryText;
+.album__title,
+.album__year {
+    color: $secondaryText;
 }
 
 .album__title {
@@ -85,17 +98,11 @@
 }
 
 .album__year {
-    text-align:right;
+    text-align: right;
 }
 
 .album img {
-    min-height:35vh;
-    width:100%;
-    transition:all 0.4s;
+    min-height: 35vh;
+    width: 100%;
+    transition: all 0.4s;
 }
-
-
-
-
-
-

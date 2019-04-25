@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Layout from '../../layout';
 import './StreamList.scss';
 import { musicList } from '../../musicList';
+import Links from './Links';
 
 interface StreamListProps {
   pageContext: any;
@@ -16,14 +17,14 @@ const streamList: React.SFC<StreamListProps> = ({
   console.log(data);
   return (
     <Layout>
+      <h1>
+        {data.title} - {data.type}
+      </h1>
       <div className="streamList">
-        <h1>{data.title}</h1>
-        <img src={data.image} />
-        <a href={data.downloadLink} target="_blank">
-          stream
-        </a>
-        <Link to="/music/">Back</Link>
+        <img className="streamList__cover" src={data.image} />
+        <Links data={data.links} />
       </div>
+      <Link to="/music/">Back</Link>
     </Layout>
   );
 };
