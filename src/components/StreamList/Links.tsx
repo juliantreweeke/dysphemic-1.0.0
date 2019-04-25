@@ -6,6 +6,7 @@ const appleMusic = require('../../images/apple.png');
 const bandcamp = require('../../images/bandcamp.png');
 const iTunes = require('../../images/iTunes.png');
 const youtube = require('../../images/youtube.png');
+const beatport = require('../../images/beatport.png');
 
 const linkData = [
   { id: 'bandcamp', image: bandcamp, text: 'DOWNLOAD' },
@@ -15,6 +16,7 @@ const linkData = [
   { id: 'youtube', image: youtube, text: 'PLAY' },
   { id: 'appleMusic', image: appleMusic, text: 'PLAY' },
   { id: 'iTunes', image: iTunes, text: 'BUY' },
+  { id: 'beatport', image: beatport, text: 'BUY' },
 ];
 
 interface LinksProps {

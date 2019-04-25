@@ -16,6 +16,12 @@ const albumRoutes = [
   {
     id: 'druid-lizard',
   },
+  {
+    id: 'avenger',
+  },
+  {
+    id: 'hypnosis',
+  },
 ];
 
 exports.createPages = async ({ actions: { createPage } }) => {
