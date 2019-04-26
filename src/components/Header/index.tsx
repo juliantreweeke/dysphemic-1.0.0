@@ -42,6 +42,13 @@ class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
   toggleOpen = () => {
     this.setState({ open: !this.state.open });
     console.log(this.state.open);
+  };
+
+  componentWillMount() {
+    console.log('yolo');
+    if (window.innerHeight > 600) {
+      this.setState({ open: false });
+    }
   }
 
   public render() {
@@ -58,7 +65,6 @@ class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
             />
           </Link>
           <nav className="header__nav">{navigation}</nav>
-          <Hamburger toggleOpen={this.toggleOpen} open={open} />
 
           {this.state.open && (
             <nav onClick={this.toggleOpen} className="header__nav-mobile-open">
@@ -66,6 +72,7 @@ class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
             </nav>
           )}
         </div>
+        <Hamburger toggleOpen={this.toggleOpen} open={open} />
       </header>
     );
   }

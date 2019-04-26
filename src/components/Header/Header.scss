@@ -17,19 +17,20 @@
     overflow: hidden;
 
     ul {
-        margin-top: 120px;
+        border-top: 1px solid $tertiaryText;
+        margin-top: 140px;
         display: flex;
         flex-direction: column;
         font-weight: 800;
         width: 100vw;
         list-style: none;
         font-size: 80px;
-        text-align: center;
+        text-align: left;
 
         li {
-            margin-top: 20px;
+            margin-top: 40px;
             display: inline-block;
-            padding: 0 1.4em 0 0;
+            padding-bottom: 1vh;
 
             a {
                 color: $tertiaryText;
@@ -112,7 +113,7 @@
 }
 
 // resize logo on mobile 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 769px) {
     .header__nav-mobile-open {
         display: block;
     }
@@ -121,8 +122,16 @@
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 550px) {
+
     .header__image {
         width: 70vw;
+    }
+
+    .header__nav-mobile-open ul {
+        font-size: 15vw;
     }
 
 }
