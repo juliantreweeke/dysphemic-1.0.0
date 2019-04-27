@@ -6,19 +6,22 @@
 }
 
 .header__nav-mobile-open {
-    display: none;
+
+    transition: width 0.5s ease-in-out;
+    width: 0vw;
     position: fixed;
     position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+
     background: $yellow;
     overflow: hidden;
 
     ul {
         border-top: 1px solid $tertiaryText;
-        margin-top: 140px;
+        margin-top: 125px;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
         font-weight: 800;
@@ -28,9 +31,9 @@
         text-align: left;
 
         li {
-            margin-top: 40px;
+            margin-top: 5px;
             display: inline-block;
-            padding-bottom: 1vh;
+            // padding-bottom: 1vh;
 
             a {
                 color: $tertiaryText;
@@ -100,6 +103,18 @@
     }
 }
 
+.header__nav-social-text {
+    padding-left: 40px;
+    color: $tertiaryText;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.fullScreen {
+    width: 100vw;
+}
+
+
 // nav item padding
 @media only screen and (max-width: 905px) {
     .header__nav ul {
@@ -115,7 +130,8 @@
 // resize logo on mobile 
 @media only screen and (max-width: 769px) {
     .header__nav-mobile-open {
-        display: block;
+        // display: block;
+        // width: 100vw;
     }
 
     .header__nav {

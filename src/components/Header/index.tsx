@@ -41,15 +41,22 @@ class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
 
   toggleOpen = () => {
     this.setState({ open: !this.state.open });
-    console.log(this.state.open);
   };
 
-  componentWillMount() {
-    console.log('yolo');
-    if (window.innerHeight > 600) {
+  componentDidMount() {
+    this.checkWindowWidth();
+    window.addEventListener('resize', this.checkWindowWidth);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.checkWindowWidth);
+  }
+
+  checkWindowWidth = () => {
+    if (window.innerWidth > 600) {
       this.setState({ open: false });
     }
-  }
+  };
 
   public render() {
     const { siteTitle } = this.props;
@@ -66,11 +73,14 @@ class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
           </Link>
           <nav className="header__nav">{navigation}</nav>
 
-          {this.state.open && (
-            <nav onClick={this.toggleOpen} className="header__nav-mobile-open">
-              {navigation}
-            </nav>
-          )}
+          <nav
+            onClick={this.toggleOpen}
+            className={`header__nav-mobile-open ${open ? 'fullScreen' : ''}`}
+          >
+            {navigation}
+            <p className="header__nav-social-text">FOLLOW</p>
+            <p className="header__nav-social-text">LISTEN</p>
+          </nav>
         </div>
         <Hamburger toggleOpen={this.toggleOpen} open={open} />
       </header>

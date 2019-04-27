@@ -23,8 +23,10 @@ const streamList: React.SFC<StreamListProps> = ({
       <div className="streamList">
         <img className="streamList__cover" src={data.image} />
         <Links data={data.links} />
+        <Link className="backLink" to="/music/">
+          Back
+        </Link>
       </div>
-      <Link to="/music/">Back</Link>
     </Layout>
   );
 };
