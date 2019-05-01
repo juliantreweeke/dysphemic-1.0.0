@@ -4,6 +4,7 @@ import './Header.scss';
 import Logo from '../../images/logo-yellow.png';
 import LogoInverted from '../../images/logo-yellow-inverted.png';
 import Hamburger from '../Hamburger';
+import IconLinks from '../IconLinks';
 
 interface HeaderProps {
   siteTitle?: string;
@@ -78,8 +79,7 @@ class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
             className={`header__nav-mobile-open ${open ? 'fullScreen' : ''}`}
           >
             {navigation}
-            <p className="header__nav-social-text">FOLLOW</p>
-            <p className="header__nav-social-text">LISTEN</p>
+            <IconLinks height={30} />
           </nav>
         </div>
         <Hamburger toggleOpen={this.toggleOpen} open={open} />

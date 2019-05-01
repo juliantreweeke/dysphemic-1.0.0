@@ -51,6 +51,19 @@
                 }
             }
         }
+
+
+    }
+}
+
+.header__nav-mobile-open .iconLinks {
+    flex-direction: row;
+    border-top: 0px;
+
+    svg {
+        &:hover {
+            fill: $hoverText;
+        }
     }
 }
 

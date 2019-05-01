@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './layout.scss';
 
 interface LayoutProps {
@@ -50,6 +51,7 @@ class Layout extends React.Component<LayoutProps, {}> {
               </Helmet>
               <Header siteTitle={siteMetadata.title} />
               <div className="layout">{children}</div>
+              <Footer />
             </>
           );
         }}

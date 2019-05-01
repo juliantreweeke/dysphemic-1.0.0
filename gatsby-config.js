@@ -7,13 +7,20 @@ module.exports = {
     title: 'Dysphemic',
     siteUrl: `https://gatsby-typescript-boilerplate.netlify.com`,
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svgs/
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

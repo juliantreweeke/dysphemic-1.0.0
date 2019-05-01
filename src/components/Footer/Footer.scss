@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+
+.footer {
+    padding: 1.45rem 1.0875rem;
+
+    svg {
+        fill: $primaryText;
+
+        &:hover {
+            fill: $hoverText;
+        }
+    }
+}
