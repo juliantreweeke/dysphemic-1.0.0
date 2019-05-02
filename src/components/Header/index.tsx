@@ -8,6 +8,8 @@ import IconLinks from '../IconLinks';
 
 interface HeaderProps {
   siteTitle?: string;
+  open?: boolean;
+  toggleOpen?: any;
 }
 
 const navigation = (
@@ -35,35 +37,11 @@ const navigation = (
   </ul>
 );
 
-class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
-  state = {
-    open: false,
-  };
-
-  toggleOpen = () => {
-    this.setState({ open: !this.state.open });
-  };
-
-  componentDidMount() {
-    this.checkWindowWidth();
-    window.addEventListener('resize', this.checkWindowWidth);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.checkWindowWidth);
-  }
-
-  checkWindowWidth = () => {
-    if (window.innerWidth > 600) {
-      this.setState({ open: false });
-    }
-  };
-
+class Header extends React.PureComponent<HeaderProps> {
   public render() {
-    const { siteTitle } = this.props;
-    const { open } = this.state;
+    const { siteTitle, open, toggleOpen } = this.props;
     return (
-      <header className="header">
+      <header className={`header ${open ? 'header-fixed' : ''}`}>
         <div className="header__content">
           <Link to="/" className="header__link">
             <img
@@ -75,14 +53,16 @@ class Header extends React.PureComponent<HeaderProps, { open: boolean }> {
           <nav className="header__nav">{navigation}</nav>
 
           <nav
-            onClick={this.toggleOpen}
+            onClick={toggleOpen}
             className={`header__nav-mobile-open ${open ? 'fullScreen' : ''}`}
           >
-            {navigation}
-            <IconLinks height={30} />
+            <div className="header__nav-mobile-open-content">
+              {navigation}
+              <IconLinks height={30} />
+            </div>
           </nav>
         </div>
-        <Hamburger toggleOpen={this.toggleOpen} open={open} />
+        <Hamburger toggleOpen={toggleOpen} open={open} />
       </header>
     );
   }

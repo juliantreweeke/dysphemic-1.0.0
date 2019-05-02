@@ -2,8 +2,8 @@ import React from 'react';
 import './Hamburger.scss';
 
 interface HamburgerProps {
-  open: boolean;
-  toggleOpen: any;
+  open?: boolean;
+  toggleOpen?: any;
 }
 
 const hamburger: React.SFC<HamburgerProps> = ({ open, toggleOpen }) => {
