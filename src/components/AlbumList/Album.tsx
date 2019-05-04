@@ -3,7 +3,20 @@ import { Link } from 'gatsby';
 import './AlbumList.scss';
 
 interface AlbumProps {
-  data: any;
+  data: {
+    id: string;
+    title: string;
+    year: number;
+    image: any;
+    type: string;
+    links: {
+      bandcamp?: string;
+      spotify?: string;
+      iTunes?: string;
+      youtube?: string;
+      appleMusic?: string;
+    };
+  };
 }
 
 const album: React.SFC<AlbumProps> = ({ data }) => {

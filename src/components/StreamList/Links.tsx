@@ -32,12 +32,17 @@ const links: React.SFC<LinksProps> = ({ data }) => {
           const link = linkData.find(x => x.id === key);
           const url = data[key];
           return (
-            <li className="streamList__link" key={link.id}>
-              <a href={url} target="_blank">
+            <a
+              className="streamList__link"
+              key={link.id}
+              href={url}
+              target="_blank"
+            >
+              <li>
                 <img className="streamList__logo" src={link.image} />
                 <p>{link.text}</p>
-              </a>
-            </li>
+              </li>
+            </a>
           );
         })}
       </ul>

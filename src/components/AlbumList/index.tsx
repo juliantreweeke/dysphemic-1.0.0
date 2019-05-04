@@ -3,7 +3,7 @@ import './AlbumList.scss';
 import Album from './Album';
 
 interface AlbumListProps {
-  data: any;
+  data: [];
 }
 
 class AlbumList extends React.PureComponent<AlbumListProps, {}> {
