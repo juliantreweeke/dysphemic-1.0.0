@@ -73,7 +73,7 @@ export const musicList = [
   },
   {
     id: 'banana-phantom',
-    title: 'Banana Phantom - Megan Hamilton(Dys Remix)',
+    title: 'Banana Phantom - Megan Hamilton (Dysphemic Remix)',
     year: 2017,
     image: bananaPhantomImage,
     type: 'Single',

@@ -17,7 +17,7 @@ const streamList: React.SFC<StreamListProps> = ({
   console.log(data);
   return (
     <Layout>
-      <h1>
+      <h1 className="streamList__header">
         {data.title} - {data.type}
       </h1>
       <div className="streamList">

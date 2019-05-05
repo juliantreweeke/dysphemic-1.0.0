@@ -8,7 +8,7 @@ class Thanks extends React.PureComponent<{}, {}> {
         <div style={{ minHeight: '50vh' }}>
           <h1>Thanks!</h1>
           <p style={{ textAlign: 'center' }}>
-            Thanks for reaching out, some one will contact you shortly.
+            Thanks for reaching out, someone will contact you shortly.
           </p>
         </div>
       </Layout>

@@ -1,11 +1,11 @@
 import React from 'react';
 import './ContactForm.scss';
-import { Link } from 'gatsby';
 
 const contactForm: React.SFC = () => {
   return (
     <div className="contact-form">
       <form
+        action="/thanks/"
         method="post"
         name="contact"
         data-netlify="true"
@@ -25,13 +25,11 @@ const contactForm: React.SFC = () => {
           <label htmlFor="message">Message</label>
           <textarea name="message" id="message" rows="6" />
         </div>
-        <Link to="/thanks/">
-          <input
-            type="submit"
-            value="Send Message"
-            className="contact-form__submit"
-          />
-        </Link>
+        <input
+          type="submit"
+          value="Send Message"
+          className="contact-form__submit"
+        />
       </form>
     </div>
   );

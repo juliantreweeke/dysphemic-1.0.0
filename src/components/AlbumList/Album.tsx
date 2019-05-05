@@ -20,11 +20,14 @@ interface AlbumProps {
 }
 
 const album: React.SFC<AlbumProps> = ({ data }) => {
+  const title =
+    data.title.length > 24 ? `${data.title.substring(0, 24)}...` : data.title;
+
   return (
     <li className="album">
       <Link to={`/stream/${data.id}`}>
         <div className="album__info">
-          <span className="album__title">{data.title}</span>
+          <span className="album__title">{title}</span>
           <span className="album__year">{data.year}</span>
         </div>
         <img src={data.image} alt={data.title} />
