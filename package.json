@@ -13,6 +13,7 @@
     "ie >=9"
   ],
   "dependencies": {
+    "bandsintown": "^1.0.1",
     "gatsby": "^2.0.45",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-favicon": "^3.1.4",

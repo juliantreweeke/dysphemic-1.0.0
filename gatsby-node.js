@@ -9,8 +9,16 @@
 
 // You can delete this file if you're not using it
 
-const albumRoutes = [
-  {
+// var bandsintown = require('bandsintown')(APP_ID);
+
+// bandsintown
+//   .getArtistEventList('Skrillex')
+//   .then(function (events) {
+//     console.log(events);
+//     // return array of events
+//   });
+
+const albumRoutes = [{
     id: 'zeus',
   },
   {
@@ -22,9 +30,25 @@ const albumRoutes = [
   {
     id: 'hypnosis',
   },
+  {
+    id: 'spaceship-earth',
+  },
+  {
+    id: 'banana-phantom'
+  },
+  {
+    id: 'interglactic'
+  },
+  {
+    id: 'starchaser'
+  }
 ];
 
-exports.createPages = async ({ actions: { createPage } }) => {
+exports.createPages = async ({
+  actions: {
+    createPage
+  }
+}) => {
   albumRoutes.forEach(albumRoute => {
     createPage({
       path: `/stream/${albumRoute.id}/`,

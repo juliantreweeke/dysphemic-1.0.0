@@ -39,7 +39,7 @@ const biography: React.SFC = () => {
         <iframe
           autoplay="true"
           className="biography-video"
-          src="https://www.youtube.com/embed/OPcXvgsVS_s"
+          src="https://www.youtube.com/embed/OPcXvgsVS_s?autoplay=1"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen="true"

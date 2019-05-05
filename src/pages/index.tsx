@@ -9,7 +9,6 @@ class IndexPage extends React.PureComponent<{}, {}> {
       <Layout>
         <h1>News</h1>
         <p>Mind Bandit is coming</p>
-        <Link to="/page-2/">Go to page 2</Link>
       </Layout>
     );
   }

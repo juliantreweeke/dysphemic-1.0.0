@@ -25,8 +25,8 @@ const navigation = (
       </Link>
     </li>
     <li>
-      <Link activeClassName="active" to="/shop/">
-        SHOP
+      <Link activeClassName="active" to="/shows/">
+        SHOWS
       </Link>
     </li>
     <li>
