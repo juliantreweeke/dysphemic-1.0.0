@@ -41,6 +41,15 @@ const albumRoutes = [{
   },
   {
     id: 'starchaser'
+  },
+  {
+    id: 'mothership'
+  },
+  {
+    id: 'dinosaur'
+  },
+  {
+    id: 'yowie'
   }
 ];
 

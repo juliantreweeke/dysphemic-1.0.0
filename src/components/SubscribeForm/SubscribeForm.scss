@@ -1,0 +1,82 @@
+@import '../../styles/colors';
+
+.subscribe-form {
+
+    // border: 1px solid $primaryText;
+    color: $primaryText;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    h3 {
+        color: $white;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .subheading-container {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__submit {
+        background-color: transparent;
+        border: 1px solid $primaryText;
+        color: $primaryText;
+        width: 91%;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+        &:hover {
+            color: $hoverText;
+            border: 1px solid $hoverText;
+        }
+    }
+
+    &__field-group {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+
+    &__field {
+        width: 100%;
+        padding-bottom: 20px;
+        display: flex;
+        background-color: transparent;
+
+        label {
+            text-align: left;
+            margin-right: 10px;
+            padding-top: 4px;
+        }
+
+        input {
+            width: 100%;
+            color: $white;
+            border: none;
+            border-bottom: 1px dashed grey;
+            background-color: transparent;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .subscribe-form {
+        width: 90%;
+    }
+
+}

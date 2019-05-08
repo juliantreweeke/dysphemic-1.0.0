@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import News from '../components/News';
+import SubscribeForm from '../components/SubscribeForm';
 import Layout from '../layout';
 import './indexPage.scss';
 
@@ -8,7 +10,8 @@ class IndexPage extends React.PureComponent<{}, {}> {
     return (
       <Layout>
         <h1>News</h1>
-        <p>Mind Bandit is coming</p>
+        <News />
+        <SubscribeForm />
       </Layout>
     );
   }

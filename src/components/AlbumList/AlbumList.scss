@@ -50,6 +50,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
     grid-gap: 1em;
+    margin-bottom: 100px;
 }
 
 .album {

@@ -6,6 +6,9 @@ const spaceshipEarthImage = require('../src/images/covers/spaceship-earth.jpg');
 const bananaPhantomImage = require('../src/images/covers/Banana-Phantom.jpg');
 const interglacticImage = require('../src/images/covers/interglactic.jpg');
 const starchaserImage = require('../src/images/covers/starchaser.jpg');
+const mothershipImage = require('../src/images/covers/mothership.jpg');
+const yowieImage = require('../src/images/covers/yowie.jpg');
+const dinosaurImage = require('../src/images/covers/dinosaur.jpg');
 
 export const musicList = [
   {
@@ -107,6 +110,41 @@ export const musicList = [
       spotify: 'https://open.spotify.com/album/2fBRad26Q9AeMQM3YuGrXS',
       soundcloud:
         'https://soundcloud.com/dysphemic0/sets/adventures-of-star-chaser-ep',
+    },
+  },
+  {
+    id: 'mothership',
+    title: 'Return to the Mothership',
+    year: 2014,
+    image: mothershipImage,
+    type: 'EP',
+    links: {
+      spotify: 'https://open.spotify.com/album/592BS91aG4PWufN0EvnYle',
+      soundcloud:
+        'https://soundcloud.com/dysphemic0/sets/return-to-the-mothership-1',
+    },
+  },
+  {
+    id: 'yowie',
+    title: 'Yowie',
+    year: 2015,
+    image: yowieImage,
+    type: 'EP',
+    links: {
+      bandcamp: 'https://dysphemic.bandcamp.com/album/yowie-ep',
+      soundcloud: 'https://soundcloud.com/dysphemic0/sets/yowie-ep-1',
+    },
+  },
+  {
+    id: 'dinosaur',
+    title: 'MUTH​@​F#CKN DINOSAUR!',
+    year: 2013,
+    image: dinosaurImage,
+    type: 'EP',
+    links: {
+      bandcamp: 'https://dysphemic.bandcamp.com/album/muth-f-ckn-dinosaur',
+      soundcloud:
+        'https://soundcloud.com/dysphemic0/sets/muth-f-ckn-dinosaur-free',
     },
   },
 ];

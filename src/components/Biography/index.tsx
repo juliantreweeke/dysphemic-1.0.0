@@ -1,5 +1,6 @@
 import React from 'react';
 import './Biography.scss';
+import Video from '../Video/';
 const dys = require('../../images/dys.jpg');
 
 const biography: React.SFC = () => {
@@ -35,16 +36,7 @@ const biography: React.SFC = () => {
           </p>
         </div>
       </div>
-      <div className="biography-video-container">
-        <iframe
-          autoplay="true"
-          className="biography-video"
-          src="https://www.youtube.com/embed/OPcXvgsVS_s?autoplay=1"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen="true"
-        />
-      </div>
+      <Video id="OPcXvgsVS_s" autoplay={true} />
     </>
   );
 };

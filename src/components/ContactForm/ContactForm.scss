@@ -7,7 +7,12 @@
     margin-left: auto;
     margin-right: auto;
 
+    color: $primaryText;
+
     &__submit {
+        background-color: transparent;
+        border: 1px solid $primaryText;
+        color: $primaryText;
         width: 91%;
         padding: 10px;
         cursor: pointer;
@@ -15,12 +20,13 @@
 
         &:hover {
             color: $hoverText;
-            background-color: $primaryText;
+            border: 1px solid $hoverText;
         }
     }
 
 
     &__field {
+
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -30,7 +36,11 @@
             padding-bottom: 5px;
         }
 
-        input {
+        input,
+        textarea {
+            color: $white;
+            border: 1px solid $primaryText;
+            background: transparent;
             padding: 10px;
         }
     }
