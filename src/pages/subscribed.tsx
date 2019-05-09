@@ -6,9 +6,9 @@ class Subscribed extends React.PureComponent<{}, {}> {
     return (
       <Layout>
         <div style={{ minHeight: '50vh' }}>
-          <h1>Thanks for subscribing!</h1>
+          <h1>Thanks for Subscribing!</h1>
           <p style={{ textAlign: 'center' }}>
-            Your now on the list to get free tunes.
+            Your are now on the list to get sent free tunes.
           </p>
         </div>
       </Layout>

@@ -25,9 +25,13 @@ const navigation = (
       </Link>
     </li>
     <li>
-      <Link activeClassName="active" to="/shows/">
-        SHOWS
-      </Link>
+      <a
+        activeClassName="active"
+        href="https://dysphemic.myshopify.com"
+        target="_blank"
+      >
+        MERCH
+      </a>
     </li>
     <li>
       <Link activeClassName="active" to="/contact/">
