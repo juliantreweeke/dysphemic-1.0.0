@@ -15,6 +15,11 @@ interface HeaderProps {
 const navigation = (
   <ul>
     <li>
+      <Link activeClassName="active" to="/">
+        NEWS
+      </Link>
+    </li>
+    <li>
       <Link activeClassName="active" to="/music/">
         MUSIC
       </Link>

@@ -9,7 +9,6 @@ class IndexPage extends React.PureComponent<{}, {}> {
   public render() {
     return (
       <Layout>
-        <h1>News</h1>
         <News />
         <SubscribeForm />
       </Layout>
