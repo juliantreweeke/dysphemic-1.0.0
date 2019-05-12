@@ -55,7 +55,7 @@ export const musicList = [
   {
     id: 'hypnosis',
     title: 'Hypnosis',
-    year: 2011,
+    year: 2010,
     image: hypnosisImage,
     type: 'Album',
     links: {

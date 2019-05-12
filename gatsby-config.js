@@ -13,6 +13,11 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    }, {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '225587191206971',
+      },
     },
     {
       resolve: 'gatsby-plugin-react-svg',
