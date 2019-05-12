@@ -64,11 +64,13 @@ class Layout extends React.Component<LayoutProps, {}> {
                 meta={[
                   {
                     name: 'description',
-                    content: 'Dysphemic website of electronic music producer',
+                    content:
+                      'Music Website for Electronic Bass Producer Dysphemic',
                   },
                   {
                     name: 'keywords',
-                    content: 'Gatsby, TypeScript, Starter',
+                    content:
+                      'dubstep, trap, edm, drum and bass,dnb, music, glitch,idm,downloads,free, world,bass,glitch hop, hip hop,music producer',
                   },
                 ]}
               >
