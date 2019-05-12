@@ -32,6 +32,10 @@
     border-bottom: 1px solid #353535;
     transition: all 0.2s ease-in-out;
 
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
     li {
         display: flex;
         justify-content: space-between;
@@ -55,6 +59,22 @@
         transition: all 0.3s ease-in-out;
 
     }
+}
+
+.streamList__link::after {
+    content: '';
+    z-index: -1;
+    background-color: hsla(0, 0%, 50%, 0.153);
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    width: 1em;
+    transform: translateX(-525%) rotate(35deg);
+}
+
+.streamList__link:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translateX(2500%) rotate(35deg);
 }
 
 .streamList__logo {

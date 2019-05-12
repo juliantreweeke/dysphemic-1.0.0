@@ -22,6 +22,10 @@ const subscribeForm: React.SFC = () => {
           <div className="subscribe-form__field">
             <label htmlFor="name">Name:</label>
             <input placeholder="yo name..." type="text" name="name" id="name" />
+            <span className="bottom" />
+            <span className="right" />
+            <span className="top" />
+            <span className="left" />
           </div>
           <div className="subscribe-form__field">
             <label htmlFor="email">Email:</label>
@@ -31,6 +35,10 @@ const subscribeForm: React.SFC = () => {
               name="email"
               id="email"
             />
+            <span className="bottom" />
+            <span className="right" />
+            <span className="top" />
+            <span className="left" />
           </div>
         </div>
         <input
