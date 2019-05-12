@@ -9,6 +9,8 @@ const starchaserImage = require('../src/images/covers/starchaser.jpg');
 const mothershipImage = require('../src/images/covers/mothership.jpg');
 const yowieImage = require('../src/images/covers/yowie.jpg');
 const dinosaurImage = require('../src/images/covers/dinosaur.jpg');
+const slothImage = require('../src/images/covers/sloth.jpg');
+const androidsImage = require('../src/images/covers/androids.jpg');
 
 export const musicList = [
   {
@@ -145,6 +147,34 @@ export const musicList = [
       bandcamp: 'https://dysphemic.bandcamp.com/album/muth-f-ckn-dinosaur',
       soundcloud:
         'https://soundcloud.com/dysphemic0/sets/muth-f-ckn-dinosaur-free',
+      youtube: 'https://www.youtube.com/watch?v=WuurDdW0CiA',
+    },
+  },
+  {
+    id: 'sloth',
+    title: 'SLOTH',
+    year: 2011,
+    image: slothImage,
+    type: 'EP',
+    links: {
+      bandcamp: 'https://dysphemic.bandcamp.com/album/sloth-ep-free-download',
+      spotify: 'https://open.spotify.com/album/5E9LfBVJs5FZkCoUkAhhk8',
+      soundcloud:
+        'https://soundcloud.com/dysphemic0/sets/sloth-ep-dysphemic-free',
+      youtube: 'https://www.youtube.com/watch?v=nXe0e-zStPg',
+    },
+  },
+  {
+    id: 'androids',
+    title: 'Androids',
+    year: 2011,
+    image: androidsImage,
+    type: 'EP',
+    links: {
+      bandcamp:
+        'https://dysphemic.bandcamp.com/album/androids-ep-free-download',
+      soundcloud: 'https://soundcloud.com/dysphemic0/sets/androids-ep',
+      youtube: 'https://www.youtube.com/watch?v=NIbzDhDVuFE',
     },
   },
 ];

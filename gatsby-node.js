@@ -50,6 +50,12 @@ const albumRoutes = [{
   },
   {
     id: 'yowie'
+  },
+  {
+    id: 'sloth'
+  },
+  {
+    id: 'androids'
   }
 ];
 

@@ -31,9 +31,9 @@
         text-align: left;
 
         li {
-            margin-top: 5px;
+
             display: inline-block;
-            height: 15vh;
+            height: 13vh;
 
             a {
                 color: $tertiaryText;
@@ -57,12 +57,14 @@
 }
 
 .header__nav-mobile-open .iconLinks {
+
     flex-direction: row;
     border-top: 0px;
     margin-top: 10px;
     padding: 0px 17px;
 
     svg {
+
         &:hover {
             fill: $hoverText;
         }
@@ -136,7 +138,7 @@
 
 
 // nav item padding
-@media only screen and (max-width: 905px) {
+@media only screen and (max-width: 950px) {
     .header__nav ul {
         font-size: 16px;
         margin-top: 20px;
@@ -148,7 +150,7 @@
 }
 
 // resize logo on mobile 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 810px) {
 
     .header__nav {
         display: none;
