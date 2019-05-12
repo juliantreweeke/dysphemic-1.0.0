@@ -25,13 +25,15 @@ const album: React.SFC<AlbumProps> = ({ data }) => {
 
   return (
     <li className="album">
-      <Link to={`/stream/${data.id}`}>
-        <div className="album__info">
-          <span className="album__title">{title}</span>
-          <span className="album__year">{data.year}</span>
-        </div>
-        <img src={data.image} alt={data.title} />
-      </Link>
+      <span className="album__bottom-border">
+        <Link to={`/stream/${data.id}`}>
+          <div className="album__info">
+            <span className="album__title">{title}</span>
+            <span className="album__year">{data.year}</span>
+          </div>
+          <img src={data.image} alt={data.title} />
+        </Link>
+      </span>
     </li>
   );
 };

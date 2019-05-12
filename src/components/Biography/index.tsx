@@ -9,6 +9,7 @@ const biography: React.SFC = () => {
       <div className="biography">
         <img className="biography__image" src={dys} alt="dysphemic" />
         <div className="biography__text">
+          <h1>About</h1>
           <p>
             Producer and rapper, Dysphemic, son of Vernon Treweeke the "Father
             of Australian Psychedelic Art", started experimenting with music on

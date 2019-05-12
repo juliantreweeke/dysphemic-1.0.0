@@ -57,6 +57,36 @@
     list-style: none;
     cursor: pointer;
 
+    &__bottom-border {
+        position: relative;
+    }
+
+    &__bottom-border::before,
+    &__bottom-border::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: $hoverText;
+        transform-origin: center;
+        transform: translateX(-50%) scaleX(0);
+        transition: transform 0.4s ease;
+    }
+
+    &__bottom-border::before {
+        top: 0;
+    }
+
+    &__bottom-border::after {
+        bottom: 0;
+    }
+
+    &__bottom-border:hover::before,
+    &__bottom-border:hover::after {
+        transform: translateX(-50%) scaleX(1);
+    }
+
     &:hover {
         border: 1px solid darken($secondaryText, 100%);
         animation-name: flicker;

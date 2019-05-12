@@ -3,6 +3,10 @@
 .biography {
     display: flex;
 
+    h1 {
+        text-align: left;
+    }
+
     &__image {
         margin-top: 10px;
         width: 50%;

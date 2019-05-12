@@ -7,7 +7,6 @@ class About extends React.PureComponent<{}, {}> {
   public render() {
     return (
       <Layout>
-        <h1>About</h1>
         <Biography />
         <SubscribeForm />
       </Layout>
