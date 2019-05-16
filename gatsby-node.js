@@ -9,7 +9,7 @@
 
 // You can delete this file if you're not using it
 
-// var bandsintown = require('bandsintown')(APP_ID);
+// var bandsintown = require('bandsintown')('0 ebe067d7adea5afffde058ec8e15f53');
 
 // bandsintown
 //   .getArtistEventList('Skrillex')
