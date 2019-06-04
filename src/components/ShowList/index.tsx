@@ -11,22 +11,24 @@ const showList: React.SFC<ShowListProps> = () => (
     query={graphql`
       query Shows {
         allContentfulShow(sort: { fields: date, order: ASC }) {
-          nodes {
-            id
-            title
-            date
-            month
-            dateNumber
-            facebook
-            streetAddress
-            image {
-              file {
-                url
+          edges {
+            node {
+              id
+              title
+              date
+              month
+              dateNumber
+              facebook
+              streetAddress
+              image {
+                file {
+                  url
+                }
               }
-            }
-            location {
-              lon
-              lat
+              location {
+                lon
+                lat
+              }
             }
           }
         }
@@ -35,8 +37,8 @@ const showList: React.SFC<ShowListProps> = () => (
     render={data => (
       <>
         <ul className="showList">
-          {data.allContentfulShow.nodes.map(show => (
-            <Show data={show} />
+          {data.allContentfulShow.edges.map(data => (
+            <Show data={data.node} />
           ))}
         </ul>
       </>
