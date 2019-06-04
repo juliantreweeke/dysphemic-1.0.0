@@ -12,9 +12,7 @@ interface StreamListProps {
 const streamList: React.SFC<StreamListProps> = ({
   pageContext: { albumRoute },
 }) => {
-  console.log(albumRoute);
   const data = musicList.find(album => album.id === albumRoute.id);
-  console.log(data);
   return (
     <Layout>
       <h1 className="streamList__header">
