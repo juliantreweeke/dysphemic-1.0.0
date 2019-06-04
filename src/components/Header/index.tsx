@@ -39,6 +39,11 @@ const navigation = (
       </a>
     </li>
     <li>
+      <Link activeClassName="active" to="/shows/">
+        SHOWS
+      </Link>
+    </li>
+    <li>
       <Link activeClassName="active" to="/contact/">
         CONTACT
       </Link>

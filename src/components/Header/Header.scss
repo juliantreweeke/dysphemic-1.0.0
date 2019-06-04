@@ -102,7 +102,7 @@
         font-weight: 800;
         color: $primaryText;
         list-style: none;
-        font-size: 20px;
+        font-size: 17px;
 
         li {
             display: inline-block;
@@ -140,7 +140,7 @@
 // nav item padding
 @media only screen and (max-width: 950px) {
     .header__nav ul {
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 20px;
     }
 
@@ -150,7 +150,7 @@
 }
 
 // resize logo on mobile 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 860px) {
 
     .header__nav {
         display: none;

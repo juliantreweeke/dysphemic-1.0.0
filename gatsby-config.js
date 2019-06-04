@@ -2,18 +2,28 @@ const cssnano = require('css-mqpacker');
 const autoprefixer = require('autoprefixer');
 const mqPacker = require('css-mqpacker');
 
+const dotenv = require('dotenv');
+
+if (process.env.ENVIRONMENT !== 'production') {
+  dotenv.config();
+}
+
+const { spaceId, accessToken } = process.env;
+
 module.exports = {
   siteMetadata: {
     title: 'Dysphemic',
     siteUrl: `https://gatsby-typescript-boilerplate.netlify.com`,
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    }, {
+    },
+    {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: '225587191206971',
@@ -23,9 +33,9 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /svgs/
-        }
-      }
+          include: /svgs/,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -59,6 +69,13 @@ module.exports = {
             sort: true,
           }),
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId,
+        accessToken,
       },
     },
     `gatsby-plugin-offline`,

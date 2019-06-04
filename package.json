@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "bandsintown": "^1.0.1",
+    "dotenv": "^8.0.0",
     "gatsby": "^2.0.45",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-facebook-pixel": "^1.0.3",
@@ -27,6 +28,7 @@
     "gatsby-plugin-sharp": "^2.0.12",
     "gatsby-plugin-sitemap": "^2.0.2",
     "gatsby-plugin-typescript": "^2.0.1",
+    "gatsby-source-contentful": "^2.0.61",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
     "react": "^16.6.1",

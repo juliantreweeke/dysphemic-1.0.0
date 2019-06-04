@@ -1,0 +1,83 @@
+@import '../../styles/colors';
+
+.showList {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.show {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #353535;
+  height: 170px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: $secondaryText;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #282828;
+
+    h2 {
+      color: $red;
+      text-shadow: 0 0 15px $red;
+    }
+  }
+}
+
+.show__info {
+  margin-left: 52px;
+  margin-right: 10px;
+  max-width: 198px;
+}
+
+.show__title {
+  text-align: left;
+}
+
+.show__date {
+  width: 36px;
+  height: 64px;
+  margin: 20px;
+  margin-top: 25px;
+}
+
+.show__dateNumber {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.show__month {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.show__image-container {
+  margin-left: auto;
+}
+
+.show img {
+  margin: 20px;
+  margin-left: 24px;
+  width: 130px;
+  height: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .show {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+
+  .show img {
+    display: none;
+  }
+}
