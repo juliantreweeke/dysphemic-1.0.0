@@ -7,7 +7,9 @@ const biography: React.SFC = () => {
   return (
     <>
       <div className="biography">
-        <img className="biography__image" src={dys} alt="dysphemic" />
+        <div>
+          <img className="biography__image" src={dys} alt="dysphemic" />
+        </div>
         <div className="biography__text">
           <h1>About</h1>
           <p>

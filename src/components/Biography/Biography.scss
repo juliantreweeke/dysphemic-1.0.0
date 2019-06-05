@@ -9,11 +9,12 @@
 
     &__image {
         margin-top: 10px;
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: auto;
     }
 
     &__text {
+        max-width: 45%;
         margin-top: 20px;
     }
 
@@ -25,13 +26,19 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 723px) {
 
     .biography {
         display: block;
 
+        &__text {
+            min-width: 100%;
+            padding-left: 10px;
+            paddin-right: 10px;
+        }
+
         &__image {
-            width: 100%;
+            min-width: 80%;
             height: 100%;
         }
     }

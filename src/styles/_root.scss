@@ -65,10 +65,7 @@ pre {
 a {
     background-color: transparent;
     text-decoration: none;
-
-    &:visited {
-        color: $primaryText;
-    }
+    color: $primaryText;
 
     &:active {
         color: $white;
