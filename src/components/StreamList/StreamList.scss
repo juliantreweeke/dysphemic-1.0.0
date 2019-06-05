@@ -2,10 +2,13 @@
 
 
 .streamList {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
     justify-items: center;
+    text-align: center;
 }
 
 .streamList__header {
@@ -17,7 +20,7 @@
 
 .streamList__link__container {
     width: 350px;
-    margin: 0px;
+    margin: 10px 0px 10px 0px;
     padding: 0px;
 }
 
@@ -68,6 +71,7 @@
     position: absolute;
     top: -50%;
     bottom: -50%;
+    left: 0%;
     width: 1em;
     transform: translateX(-525%) rotate(35deg);
 }

@@ -14,26 +14,26 @@
     top: 0;
     left: 0;
     height: 100vh;
-
+    z-index: 2;
     background: $yellow;
     overflow: hidden;
 
     ul {
         border-top: 1px solid $tertiaryText;
         margin-top: 125px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         display: flex;
         flex-direction: column;
         font-weight: 800;
         width: 100vw;
         list-style: none;
-        font-size: 80px;
+        font-size: 75px;
         text-align: left;
 
         li {
 
             display: inline-block;
-            height: 13vh;
+            height: 12vh;
 
             a {
                 color: $tertiaryText;
@@ -51,8 +51,6 @@
                 }
             }
         }
-
-
     }
 }
 
@@ -69,6 +67,15 @@
             fill: $hoverText;
         }
     }
+
+    a {
+        display: flex;
+    }
+
+    li {
+        height: 1vh;
+    }
+
 }
 
 .header__nav-mobile-open-content {
@@ -85,13 +92,12 @@
 }
 
 .header__link {
-    z-index: 1;
+    z-index: 3;
     text-decoration: none;
 }
 
 .header__image {
     width: 400px;
-
 }
 
 .header__nav {
@@ -138,7 +144,7 @@
 
 
 // nav item padding
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 964px) {
     .header__nav ul {
         font-size: 14px;
         margin-top: 20px;

@@ -46,14 +46,16 @@
 
 
 .album-list {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
-    grid-gap: 1em;
     margin-bottom: 100px;
 }
 
 .album {
+    margin: 0.2em;
+    max-width: 300px;
+    justify-content: center;
     list-style: none;
     cursor: pointer;
 
@@ -136,4 +138,23 @@
     min-height: 35vh;
     width: 100%;
     transition: all 0.4s;
+}
+
+@media only screen and (max-width: 954px) {
+    .album {
+        min-width: 47vw;
+        max-width: 47vw;
+    }
+}
+
+@media only screen and (max-width: 791px) {
+    .album {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .album img {
+        margin-bottom: 10px;
+        min-height: 60vh;
+    }
 }
