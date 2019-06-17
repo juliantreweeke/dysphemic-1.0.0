@@ -11,6 +11,7 @@ const yowieImage = require('../src/images/covers/yowie.jpg');
 const dinosaurImage = require('../src/images/covers/dinosaur.jpg');
 const slothImage = require('../src/images/covers/sloth.jpg');
 const androidsImage = require('../src/images/covers/androids.jpg');
+const mindbanditImage = require('../src/images/covers/mindbanditblur.jpg');
 
 export const musicList = [
   {
@@ -175,6 +176,16 @@ export const musicList = [
         'https://dysphemic.bandcamp.com/album/androids-ep-free-download',
       soundcloud: 'https://soundcloud.com/dysphemic0/sets/androids-ep',
       youtube: 'https://www.youtube.com/watch?v=NIbzDhDVuFE',
+    },
+  },
+  {
+    id: 'mindbandit',
+    title: 'Mind Bandit',
+    year: 2019,
+    image: mindbanditImage,
+    type: 'EP',
+    links: {
+      spotify: 'https://distrokid.com/hyperfollow/dysphemic/mind-bandit',
     },
   },
 ];

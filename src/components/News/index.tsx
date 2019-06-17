@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Video from '../../components/Video';
 import './News.scss';
 
-const mindBandit = require('../../images/covers/mindbanditblur.jpg');
+const mindBandit = require('../../images/covers/mindbandit.jpg');
 
 interface NewsProps {}
 
@@ -16,9 +16,14 @@ const news: React.SFC<NewsProps> = () => {
           <div className="news__section__text">
             <h2>Mind Bandit is coming!</h2>
             <p>
-              Hell yeah! My new EP Mind Bandit is coming very very soon. Psyched
-              about this one. Release date TBC
+              Absolutely psyched to announce my new EP ‘Mind Bandit’ dropping
+              July 3rd!!!
             </p>
+            <p>
+              Whooooop it’s got mega Glitchy/Trap on it, down tempo/Chill/IDM, a
+              HipHop/Grime/Bass banger and even some Future House on it.
+            </p>
+            <p>Can’t wait to share this special release with y’all.</p>
           </div>
         </div>
       </section>

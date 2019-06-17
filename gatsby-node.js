@@ -18,7 +18,8 @@
 //     // return array of events
 //   });
 
-const albumRoutes = [{
+const albumRoutes = [
+  {
     id: 'zeus',
   },
   {
@@ -34,36 +35,35 @@ const albumRoutes = [{
     id: 'spaceship-earth',
   },
   {
-    id: 'banana-phantom'
+    id: 'banana-phantom',
   },
   {
-    id: 'interglactic'
+    id: 'interglactic',
   },
   {
-    id: 'starchaser'
+    id: 'starchaser',
   },
   {
-    id: 'mothership'
+    id: 'mothership',
   },
   {
-    id: 'dinosaur'
+    id: 'dinosaur',
   },
   {
-    id: 'yowie'
+    id: 'yowie',
   },
   {
-    id: 'sloth'
+    id: 'sloth',
   },
   {
-    id: 'androids'
-  }
+    id: 'androids',
+  },
+  {
+    id: 'mindbandit',
+  },
 ];
 
-exports.createPages = async ({
-  actions: {
-    createPage
-  }
-}) => {
+exports.createPages = async ({ actions: { createPage } }) => {
   albumRoutes.forEach(albumRoute => {
     createPage({
       path: `/stream/${albumRoute.id}/`,
