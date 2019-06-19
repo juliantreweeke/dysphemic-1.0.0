@@ -11,7 +11,7 @@ const yowieImage = require('../src/images/covers/yowie.jpg');
 const dinosaurImage = require('../src/images/covers/dinosaur.jpg');
 const slothImage = require('../src/images/covers/sloth.jpg');
 const androidsImage = require('../src/images/covers/androids.jpg');
-const mindbanditImage = require('../src/images/covers/mindbanditblur.jpg');
+const mindbanditImage = require('../src/images/covers/mindbandit.jpg');
 
 export const musicList = [
   {
@@ -185,6 +185,8 @@ export const musicList = [
     image: mindbanditImage,
     type: 'EP',
     links: {
+      soundcloud: 'https://soundcloud.com/dysphemic0/time-bandit',
+      bandcamp: 'https://dysphemic.bandcamp.com/album/mind-bandit-2',
       spotify: 'https://distrokid.com/hyperfollow/dysphemic/mind-bandit',
     },
   },

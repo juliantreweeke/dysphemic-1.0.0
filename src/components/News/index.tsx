@@ -11,21 +11,23 @@ const news: React.SFC<NewsProps> = () => {
   return (
     <div className="news">
       <section className="news__section">
-        <div className="news__section__content">
-          <img className="news__section__image" src={mindBandit} />
-          <div className="news__section__text">
-            <h2>Mind Bandit is coming!</h2>
-            <p>
-              Absolutely psyched to announce my new EP ‘Mind Bandit’ dropping
-              July 3rd!!!
-            </p>
-            <p>
-              Whooooop it’s got mega Glitchy/Trap on it, down tempo/Chill/IDM, a
-              HipHop/Grime/Bass banger and even some Future House on it.
-            </p>
-            <p>Can’t wait to share this special release with y’all.</p>
+        <Link to="/stream/mindbandit">
+          <div className="news__section__content">
+            <img className="news__section__image" src={mindBandit} />
+            <div className="news__section__text">
+              <h2>Mind Bandit is coming!</h2>
+              <p>
+                Absolutely psyched to announce my new EP ‘Mind Bandit’ dropping
+                July 3rd!!!
+              </p>
+              <p>
+                Whooooop it’s got mega Glitchy/Trap on it, down tempo/Chill/IDM,
+                a HipHop/Grime/Bass banger and even some Future House on it.
+              </p>
+              <p>Can’t wait to share this special release with y’all.</p>
+            </div>
           </div>
-        </div>
+        </Link>
       </section>
       <section className="news__section">
         <div className="news__section__content">
