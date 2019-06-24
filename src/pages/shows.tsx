@@ -7,6 +7,7 @@ class Shows extends React.PureComponent<{}, {}> {
     return (
       <Layout>
         <h1>Shows</h1>
+        <h2>USA & MEXICO TOUR 2019</h2>
         <ShowList />
       </Layout>
     );
