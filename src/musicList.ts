@@ -185,8 +185,8 @@ export const musicList = [
     image: mindbanditImage,
     type: 'EP',
     links: {
-      soundcloud: 'https://soundcloud.com/dysphemic0/time-bandit',
       bandcamp: 'https://dysphemic.bandcamp.com/album/mind-bandit-2',
+      soundcloud: 'https://soundcloud.com/dysphemic0/time-bandit',
       spotify: 'https://distrokid.com/hyperfollow/dysphemic/mind-bandit',
     },
   },
