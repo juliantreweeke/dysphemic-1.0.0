@@ -63,6 +63,27 @@ class Layout extends React.Component<LayoutProps, {}> {
                 title={siteMetadata.title}
                 meta={[
                   {
+                    property: 'fb:app_id',
+                    content: '2854549507920170',
+                  },
+                  {
+                    property: 'og:description',
+                    content:
+                      'Music Website for Electronic Bass Producer Dysphemic',
+                  },
+                  {
+                    property: 'og:title',
+                    content: 'Dysphemic',
+                  },
+                  {
+                    property: 'og:type',
+                    content: 'website',
+                  },
+                  {
+                    property: 'og:url',
+                    content: 'https://www.dysphemic.com/',
+                  },
+                  {
                     property: 'og:image',
                     content:
                       'https://www.dysphemic.com/static/mindbandit-d0648d4a14a093c24e2687f85251fd0c.jpg',
