@@ -16,9 +16,11 @@ const news: React.SFC<NewsProps> = () => {
           <div className="news__section__text">
             <h2>Mind Bandit is out!</h2>
             <p>Get ready for your mind to be stolen!</p>
-            <Link to="/stream/mindbandit">
-              <h2>FREE DOWNLOAD/SPOTIFY</h2>
-            </Link>
+            <div className="download-link-container">
+              <Link className="download-link" to="/stream/mindbandit">
+                FREE DOWNLOAD/SPOTIFY
+              </Link>
+            </div>
           </div>
         </div>
       </section>
