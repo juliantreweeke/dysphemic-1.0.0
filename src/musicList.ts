@@ -186,8 +186,9 @@ export const musicList = [
     type: 'EP',
     links: {
       bandcamp: 'https://dysphemic.bandcamp.com/album/mind-bandit-2',
-      soundcloud: 'https://soundcloud.com/dysphemic0/time-bandit',
-      spotify: 'https://distrokid.com/hyperfollow/dysphemic/mind-bandit',
+      soundcloud: 'https://soundcloud.com/dysphemic0/sets/mind-bandit-ep-1',
+      spotify: 'https://open.spotify.com/album/4ZTplcztoeqrp8t0A6Pxx7',
+      appleMusic: 'https://music.apple.com/us/album/mind-bandit-ep/1466699581',
     },
   },
 ];
