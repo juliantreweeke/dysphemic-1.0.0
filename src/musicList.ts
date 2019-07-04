@@ -189,6 +189,8 @@ export const musicList = [
       soundcloud: 'https://soundcloud.com/dysphemic0/sets/mind-bandit-ep-1',
       spotify: 'https://open.spotify.com/album/4ZTplcztoeqrp8t0A6Pxx7',
       appleMusic: 'https://music.apple.com/us/album/mind-bandit-ep/1466699581',
+      iTunes:
+        'https://music.apple.com/us/album/mind-bandit-ep/1466699581?app=itunes&ign-mpt=uo%3D4',
     },
   },
 ];
