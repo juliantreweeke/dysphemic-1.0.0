@@ -6,7 +6,9 @@ import { musicList } from '../../musicList';
 import Links from './Links';
 
 interface StreamListProps {
-  pageContext: any;
+  pageContext: {
+    albumRoute: { id: string };
+  };
 }
 
 const streamList: React.SFC<StreamListProps> = ({

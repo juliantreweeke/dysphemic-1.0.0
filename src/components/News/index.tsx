@@ -1,13 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Video from '../../components/Video';
 import './News.scss';
 
 const mindBandit = require('../../images/covers/mindbandit.jpg');
 
-interface NewsProps {}
-
-const news: React.SFC<NewsProps> = () => {
+const news: React.SFC = () => {
   return (
     <div className="news">
       <section className="news__section">

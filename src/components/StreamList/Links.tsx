@@ -24,26 +24,27 @@ interface LinksProps {
 }
 
 const links: React.SFC<LinksProps> = ({ data }) => {
-  console.log(data);
   return (
     <>
       <ul className="streamList__link__container">
         {Object.keys(data).map(key => {
           const link = linkData.find(x => x.id === key);
           const url = data[key];
-          return (
-            <a
-              className="streamList__link"
-              key={link.id}
-              href={url}
-              target="_blank"
-            >
-              <li>
-                <img className="streamList__logo" src={link.image} />
-                <p>{link.text}</p>
-              </li>
-            </a>
-          );
+          if (link) {
+            return (
+              <a
+                className="streamList__link"
+                key={link.id}
+                href={url}
+                target="_blank"
+              >
+                <li>
+                  <img className="streamList__logo" src={link.image} />
+                  <p>{link.text}</p>
+                </li>
+              </a>
+            );
+          }
         })}
       </ul>
     </>

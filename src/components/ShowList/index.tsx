@@ -4,9 +4,21 @@ import './ShowList.scss';
 import { StaticQuery, graphql } from 'gatsby';
 import Show from './Show';
 
-interface ShowListProps {}
+interface ShowProps {
+  title: string;
+  facebook: string;
+  date: string;
+  month: string;
+  dateNumber: number;
+  streetAddress: string;
+  image: {
+    file: {
+      url: string;
+    };
+  };
+}
 
-const showList: React.SFC<ShowListProps> = () => (
+const showList: React.SFC = () => (
   <StaticQuery
     query={graphql`
       query Shows {
@@ -37,7 +49,7 @@ const showList: React.SFC<ShowListProps> = () => (
     render={data => (
       <>
         <ul className="showList">
-          {data.allContentfulShow.edges.map(data => (
+          {data.allContentfulShow.edges.map((data: { node: ShowProps }) => (
             <Show data={data.node} />
           ))}
         </ul>
