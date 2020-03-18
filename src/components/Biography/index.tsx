@@ -39,7 +39,7 @@ const biography: React.SFC = () => {
           </p>
         </div>
       </div>
-      <Video id="OPcXvgsVS_s" autoplay={true} />
+      <Video id="OPcXvgsVS_s" autoplay={false} />
     </>
   );
 };
