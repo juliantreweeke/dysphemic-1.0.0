@@ -12,6 +12,8 @@ interface HeaderProps {
   toggleOpen?: any;
 }
 
+const corona = true;
+
 const navigation = (
   <ul>
     <li>
@@ -38,11 +40,13 @@ const navigation = (
         MERCH
       </a>
     </li>
-    <li>
-      <Link activeClassName="active" to="/shows/">
-        SHOWS
-      </Link>
-    </li>
+    {!corona && (
+      <li>
+        <Link activeClassName="active" to="/shows/">
+          SHOWS
+        </Link>
+      </li>
+    )}
     <li>
       <Link activeClassName="active" to="/contact/">
         CONTACT

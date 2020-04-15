@@ -2,7 +2,7 @@ import React from 'react';
 import './AlbumList.scss';
 import Album from './Album';
 
-interface IAlbum {
+interface Album {
   id: string;
   title: string;
   year: number;
@@ -17,15 +17,15 @@ interface IAlbum {
   };
 }
 
-interface IAlbumListProps {
+interface AlbumListProps {
   data: [];
 }
 
-interface ISortByYear {
+interface SortByYear {
   year: string;
 }
 
-function sortByYear(a: ISortByYear, b: ISortByYear) {
+function sortByYear(a: SortByYear, b: SortByYear) {
   if (a.year < b.year) {
     return 1;
   }
@@ -35,13 +35,13 @@ function sortByYear(a: ISortByYear, b: ISortByYear) {
   return 0;
 }
 
-class AlbumList extends React.PureComponent<IAlbumListProps, {}> {
+class AlbumList extends React.PureComponent<AlbumListProps, {}> {
   public render() {
     const { data } = this.props;
     const sortedData = data.sort(sortByYear);
     return (
       <ul className="album-list">
-        {sortedData.map((album: IAlbum) => (
+        {sortedData.map((album: Album) => (
           <Album key={album.id} data={album} />
         ))}
       </ul>

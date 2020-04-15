@@ -2,21 +2,20 @@ import React from 'react';
 import { Link } from 'gatsby';
 import './News.scss';
 
-const mindBandit = require('../../images/covers/mindbandit.jpg');
+const comingSoon = require('../../images/covers/mindbanditblur.jpg');
 
 const news: React.SFC = () => {
   return (
     <div className="news">
       <section className="news__section">
         <div className="news__section__content">
-          <img className="news__section__image" src={mindBandit} />
+          <img className="news__section__image" src={comingSoon} />
           <div className="news__section__text">
-            <h2>Mind Bandit is out!</h2>
-            <p>Get ready for your mind to be stolen!</p>
+            <h2>New Album Apollo is incoming</h2>
             <div className="download-link-container">
-              <Link className="download-link" to="/stream/mindbandit">
+              {/* <Link className="download-link" to="/stream/mindbandit">
                 FREE DOWNLOAD/SPOTIFY
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

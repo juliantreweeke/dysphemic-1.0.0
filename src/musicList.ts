@@ -12,6 +12,7 @@ const dinosaurImage = require('../src/images/covers/dinosaur.jpg');
 const slothImage = require('../src/images/covers/sloth.jpg');
 const androidsImage = require('../src/images/covers/androids.jpg');
 const mindbanditImage = require('../src/images/covers/mindbandit.jpg');
+const comingSoon = require('../src/images/covers/mindbanditblur.jpg');
 
 export const musicList = [
   {
@@ -192,5 +193,13 @@ export const musicList = [
       iTunes:
         'https://music.apple.com/us/album/mind-bandit-ep/1466699581?app=itunes&ign-mpt=uo%3D4',
     },
+  },
+  {
+    id: 'apollo',
+    title: 'Apollo',
+    year: 2020,
+    image: comingSoon,
+    type: 'Album',
+    links: {},
   },
 ];

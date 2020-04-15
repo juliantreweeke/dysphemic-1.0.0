@@ -23,7 +23,7 @@ const contactForm: React.SFC = () => {
         </div>
         <div className="contact-form__field">
           <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" rows="6" />
+          <textarea name="message" id="message" rows={6} />
         </div>
         <input
           type="submit"

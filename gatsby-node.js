@@ -7,17 +7,6 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
-
-// var bandsintown = require('bandsintown')('0 ebe067d7adea5afffde058ec8e15f53');
-
-// bandsintown
-//   .getArtistEventList('Skrillex')
-//   .then(function (events) {
-//     console.log(events);
-//     // return array of events
-//   });
-
 const albumRoutes = [
   {
     id: 'zeus',
@@ -61,9 +50,12 @@ const albumRoutes = [
   {
     id: 'mindbandit',
   },
+  {
+    id: 'apollo',
+  },
 ];
 
-exports.createPages = async ({ actions: { createPage } }) => {
+exports.createPages = ({ actions: { createPage } }) => {
   albumRoutes.forEach(albumRoute => {
     createPage({
       path: `/stream/${albumRoute.id}/`,
