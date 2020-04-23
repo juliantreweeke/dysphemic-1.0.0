@@ -2,10 +2,11 @@ import React from 'react';
 import './Biography.scss';
 import Video from '../Video/';
 const dys = require('../../images/dys.jpg');
+import Fade from 'react-reveal/Fade';
 
 const biography: React.SFC = () => {
   return (
-    <>
+    <Fade>
       <div className="biography">
         <div>
           <img className="biography__image" src={dys} alt="dysphemic" />
@@ -40,7 +41,7 @@ const biography: React.SFC = () => {
         </div>
       </div>
       <Video id="OPcXvgsVS_s" autoplay={false} />
-    </>
+    </Fade>
   );
 };
 

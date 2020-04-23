@@ -1,6 +1,7 @@
 import React from 'react';
 import News from '../components/News';
-import SubscribeForm from '../components/SubscribeForm';
+import SubscribeFormIFrame from '../components/SubscribeFormIFrame';
+
 import Layout from '../layout';
 import './indexPage.scss';
 import LogRocket from 'logrocket';
@@ -11,7 +12,7 @@ class IndexPage extends React.PureComponent<{}, {}> {
     return (
       <Layout>
         <News />
-        <SubscribeForm />
+        <SubscribeFormIFrame />
       </Layout>
     );
   }

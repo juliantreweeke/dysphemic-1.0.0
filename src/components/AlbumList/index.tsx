@@ -1,6 +1,7 @@
 import React from 'react';
 import './AlbumList.scss';
 import Album from './Album';
+import Fade from 'react-reveal/Fade';
 
 interface Album {
   id: string;
@@ -40,11 +41,13 @@ class AlbumList extends React.PureComponent<AlbumListProps, {}> {
     const { data } = this.props;
     const sortedData = data.sort(sortByYear);
     return (
-      <ul className="album-list">
-        {sortedData.map((album: Album) => (
-          <Album key={album.id} data={album} />
-        ))}
-      </ul>
+      <Fade>
+        <ul className="album-list">
+          {sortedData.map((album: Album) => (
+            <Album key={album.id} data={album} />
+          ))}
+        </ul>
+      </Fade>
     );
   }
 }

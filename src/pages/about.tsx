@@ -1,14 +1,14 @@
 import React from 'react';
 import Layout from '../layout';
 import Biography from '../components/Biography';
-import SubscribeForm from '../components/SubscribeForm';
+import SubscribeFormIFrame from '../components/SubscribeFormIFrame';
 
 class About extends React.PureComponent<{}, {}> {
   public render() {
     return (
       <Layout>
         <Biography />
-        <SubscribeForm />
+        <SubscribeFormIFrame />
       </Layout>
     );
   }

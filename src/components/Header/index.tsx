@@ -5,6 +5,7 @@ import Logo from '../../images/logo-yellow.png';
 import LogoInverted from '../../images/logo-yellow-inverted.png';
 import Hamburger from '../Hamburger';
 import IconLinks from '../IconLinks';
+import Background from '../../images/apollo_background.jpg';
 
 interface HeaderProps {
   siteTitle?: string;
@@ -59,7 +60,10 @@ class Header extends React.PureComponent<HeaderProps> {
   public render() {
     const { siteTitle, open, toggleOpen } = this.props;
     return (
-      <header className={`header ${open ? 'header-fixed' : ''}`}>
+      <header
+        style={{ backgroundImage: `url(${Background})` }}
+        className={`header ${open ? 'header-fixed' : ''}`}
+      >
         <div className="header__content">
           <Link to="/" className="header__link">
             <img
