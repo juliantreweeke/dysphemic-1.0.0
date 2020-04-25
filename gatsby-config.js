@@ -13,7 +13,7 @@ const { spaceId, accessToken } = process.env;
 module.exports = {
   siteMetadata: {
     title: 'Dysphemic',
-    siteUrl: `https://gatsby-typescript-boilerplate.netlify.com`,
+    siteUrl: `https://www.dysphemic.com`,
   },
   plugins: [
     {
@@ -46,7 +46,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: './src/favicon.png', // This path is relative to the root of the site.
+        icon: './src/favicon.png',
       },
     },
     {
