@@ -8,14 +8,22 @@ if (process.env.ENVIRONMENT !== 'production') {
   dotenv.config();
 }
 
-const { spaceId, accessToken } = process.env;
+const {
+  spaceId,
+  accessToken
+} = process.env;
 
 module.exports = {
   siteMetadata: {
     title: 'Dysphemic',
     siteUrl: `https://www.dysphemic.com`,
   },
-  plugins: [
+  plugins: [{
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '462740751155607',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
