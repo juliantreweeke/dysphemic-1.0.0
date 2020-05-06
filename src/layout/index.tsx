@@ -86,12 +86,12 @@ class Layout extends React.Component<LayoutProps, {}> {
                   {
                     property: 'og:image',
                     content:
-                      'https://www.dysphemic.com/static/mindbandit-d0648d4a14a093c24e2687f85251fd0c.jpg',
+                      'https://www.dysphemic.com/static/apollo-fcdb6c2f34c4605853d3e28eb721afe0.jpg',
                   },
                   {
                     name: 'description',
                     content:
-                      'Music Website for Electronic Bass Producer Dysphemic',
+                      'Music Website for Dubstep, Drum and Bass and Glitch Hop Producer Dysphemic',
                   },
                   {
                     name: 'keywords',
