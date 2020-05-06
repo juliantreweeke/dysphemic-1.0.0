@@ -12,6 +12,7 @@ const dinosaurImage = require('../src/images/covers/dinosaur.jpg');
 const slothImage = require('../src/images/covers/sloth.jpg');
 const androidsImage = require('../src/images/covers/androids.jpg');
 const mindbanditImage = require('../src/images/covers/mindbandit.jpg');
+const apolloImage = require('../src/images/covers/apollo.jpg');
 const comingSoon = require('../src/images/covers/mindbanditblur.jpg');
 
 export const musicList = [
@@ -198,8 +199,11 @@ export const musicList = [
     id: 'apollo',
     title: 'Apollo',
     year: 2020,
-    image: comingSoon,
+    image: apolloImage,
     type: 'Album',
-    links: {},
+    links: {
+      bandcampPreorder: 'https://dysphemic.bandcamp.com/album/apollo-2',
+      spotifyPresave: 'https://distrokid.com/hyperfollow/dysphemic/apollo-2',
+    },
   },
 ];

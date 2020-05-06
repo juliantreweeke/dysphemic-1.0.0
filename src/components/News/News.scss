@@ -6,15 +6,19 @@
         text-align: left;
     }
 
-
     .download-link-container {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .download-link-description {
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 
     .download-link {
         font-weight: bold;
-        font-size: 25px;
+        font-size: 30px;
         color: $white;
 
         &:hover {
@@ -77,6 +81,7 @@
         &__image {
             width: 80%;
             height: 80%;
+            margin-bottom: 16px;
         }
 
         .video {

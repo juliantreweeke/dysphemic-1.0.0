@@ -19,7 +19,7 @@ const navigation = (
   <ul>
     <li>
       <Link activeClassName="active" to="/">
-        NEWS
+        HOME
       </Link>
     </li>
     <li>
@@ -32,15 +32,17 @@ const navigation = (
         ABOUT
       </Link>
     </li>
-    <li>
-      <a
-        activeClassName="active"
-        href="https://dysphemic.myshopify.com"
-        target="_blank"
-      >
-        MERCH
-      </a>
-    </li>
+    {!corona && (
+      <li>
+        <a
+          activeClassName="active"
+          href="https://dysphemic.myshopify.com"
+          target="_blank"
+        >
+          MERCH
+        </a>
+      </li>
+    )}
     {!corona && (
       <li>
         <Link activeClassName="active" to="/shows/">

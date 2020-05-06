@@ -17,6 +17,8 @@ const linkData = [
   { id: 'appleMusic', image: appleMusic, text: 'PLAY' },
   { id: 'iTunes', image: iTunes, text: 'BUY' },
   { id: 'beatport', image: beatport, text: 'BUY' },
+  { id: 'bandcampPreorder', image: bandcamp, text: 'PREORDER' },
+  { id: 'spotifyPresave', image: spotify, text: 'PRESAVE' },
 ];
 
 interface LinksProps {

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Biography.scss';
-import Video from '../Video/';
-const dys = require('../../images/dys.jpg');
+const dys = require('../../images/dysphemic2020.jpeg');
 import Fade from 'react-reveal/Fade';
 
 const biography: React.SFC = () => {
@@ -12,35 +11,39 @@ const biography: React.SFC = () => {
           <img className="biography__image" src={dys} alt="dysphemic" />
         </div>
         <div className="biography__text">
-          <h1>About</h1>
           <p>
-            Producer and rapper, Dysphemic, son of Vernon Treweeke the "Father
-            of Australian Psychedelic Art", started experimenting with music on
-            a Commodore Amiga 500 and playing drums when he was still in primary
-            school.
-          </p>
-
-          <p>
-            His unrelenting work ethic produced a number of acclaimed releases
-            over his 10 year career traversing jungle, breakcore, hip hop, drum
-            and bass, dubstep and glitch hop. Releases such as 'Sloth',
-            'Androids', 'Hypnosis' and 'Muthaf#ckn Dinosaur!' received worldwide
-            attention from music critics and raver kids alike.{' '}
+            If aliens were to visit cavemen and give them the gift of bass,
+            Dysphemic would be the soundtrack.
           </p>
           <p>
-            Credited by Vice magazine for pioneering classical Dubstep and
-            touring the four corners of the globe to sold out venues and
-            critical acclaim cemented his name in music history forever.
+            Dysphemic appears to know no boundaries when it comes to genre or
+            tempo. A single track could be defined as Dubstep, House, Drum and
+            Bass, even Middle Eastern Trap, but no matter the style, the sound
+            is always bass heavy, epic, melodic & cinematic.
           </p>
           <p>
-            For the past three years Dysphemic has been drawing crowds across
-            the Northern and Southern Hemisphere festival circuit with a new
-            signature sound mixing Greek and Middle Eastern world music with
-            bass heavy EDM- a one man party sound system.
+            From being credited by Vice Magazine for pioneering classical
+            Dubstep to having his album Zeus listed as one one of the most
+            overlooked albums of 2017 by Reddit, Dysphemic has continued to
+            expand the minds of listeners around the globe with his unique take
+            on dance music. His track ‘Snake King’ was recently used by Go Pro
+            and broadcast to millions of viewers during the 2019 Tour de France.
+          </p>
+          <p>
+            The newest release, ‘Apollo’ is a hybrid of mediterranean guitar
+            styles, gothic keyboards and arabic world bass created with longtime
+            collaborator, Yiani Treweeke on keys and guitar.
+          </p>
+          <p>
+            This release sees the two brothers find influence from their
+            families Egyptian Greek roots and their psychedelic upbringing in
+            the Australian Blue Mountains to create a soundtrack of an ancient
+            future. From the tribal drum and bass vibes of Desert Hawk, to the
+            spacey House wobbles of Lost Brothers, Apollo will enlist your
+            psyche on a mission through the ancient terrains of the cosmos.
           </p>
         </div>
       </div>
-      <Video id="OPcXvgsVS_s" autoplay={false} />
     </Fade>
   );
 };
