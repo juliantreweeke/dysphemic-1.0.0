@@ -1,6 +1,8 @@
 import React from 'react';
 import './Biography.scss';
 const dys = require('../../images/dysphemic2020.jpeg');
+const dysLive = require('../../images/dys_live.jpg');
+
 import Fade from 'react-reveal/Fade';
 
 const biography: React.SFC = () => {
@@ -9,6 +11,11 @@ const biography: React.SFC = () => {
       <div className="biography">
         <div>
           <img className="biography__image" src={dys} alt="dysphemic" />
+          <img
+            className="biography__image mobileHidden"
+            src={dysLive}
+            alt="dysphemic_live"
+          />
         </div>
         <div className="biography__text">
           <p>
