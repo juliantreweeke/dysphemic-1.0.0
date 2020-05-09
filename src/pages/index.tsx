@@ -1,6 +1,6 @@
 import React from 'react';
 import News from '../components/News';
-import SubscribeFormIFrame from '../components/SubscribeFormIFrame';
+import Patreon from '../components/Patreon';
 import Layout from '../layout';
 import './indexPage.scss';
 import LogRocket from 'logrocket';
@@ -11,7 +11,7 @@ class IndexPage extends React.PureComponent<{}, {}> {
     return (
       <Layout>
         <News />
-        <SubscribeFormIFrame />
+        <Patreon />
       </Layout>
     );
   }

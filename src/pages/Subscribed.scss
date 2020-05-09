@@ -1,0 +1,15 @@
+@import '../styles/colors';
+
+.subscribed {
+    min-height: 50vh;
+    text-align: center;
+
+    &__heading {
+        color: $highlightText;
+    }
+
+    &__text {
+        margin-bottom: 64px;
+        line-height: 1.5em;
+    }
+}

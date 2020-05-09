@@ -1,0 +1,25 @@
+@import '../../styles/colors';
+
+.patreon {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__heading {
+        color: $highlightText;
+    }
+
+    &__description {
+        color: $primaryText;
+        margin-top: 16px;
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .patreon {
+        width: 90%;
+    }
+
+}
