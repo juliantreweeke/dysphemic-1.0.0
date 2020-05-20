@@ -203,7 +203,7 @@ export const musicList = [
     type: 'Album',
     links: {
       bandcamp: 'https://dysphemic.bandcamp.com/album/apollo-2',
-      spotifyPresave: 'https://distrokid.com/hyperfollow/dysphemic/apollo-2',
+      spotify: 'https://open.spotify.com/album/5BzVIWvPutiWca4N7YvN1Y',
     },
   },
 ];
