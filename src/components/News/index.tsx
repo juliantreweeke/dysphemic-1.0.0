@@ -15,10 +15,10 @@ const news: React.SFC = () => {
           <div className="news__section__content">
             <img className="news__section__image" src={apolloImage} />
             <div className="news__section__text">
-              <h2>New album Apollo - Dropping 20th May</h2>
+              <h2>New album Apollo - Out Now</h2>
               <div className="download-link-container">
                 <Link className="download-link" to="/stream/apollo">
-                  Preorder - Presave now
+                  Free Download/Stream
                 </Link>
                 <div className="download-link-description">
                   <p>

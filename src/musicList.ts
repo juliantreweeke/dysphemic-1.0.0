@@ -202,7 +202,7 @@ export const musicList = [
     image: apolloImage,
     type: 'Album',
     links: {
-      bandcampPreorder: 'https://dysphemic.bandcamp.com/album/apollo-2',
+      bandcamp: 'https://dysphemic.bandcamp.com/album/apollo-2',
       spotifyPresave: 'https://distrokid.com/hyperfollow/dysphemic/apollo-2',
     },
   },
