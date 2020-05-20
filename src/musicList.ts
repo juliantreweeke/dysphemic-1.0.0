@@ -204,6 +204,8 @@ export const musicList = [
     links: {
       bandcamp: 'https://dysphemic.bandcamp.com/album/apollo-2',
       spotify: 'https://open.spotify.com/album/5BzVIWvPutiWca4N7YvN1Y',
+      soundcloud:
+        'https://soundcloud.com/dysphemic0/sets/apollo-feat-yiani-treweeke',
     },
   },
 ];
