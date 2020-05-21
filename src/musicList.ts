@@ -206,6 +206,10 @@ export const musicList = [
       spotify: 'https://open.spotify.com/album/5BzVIWvPutiWca4N7YvN1Y',
       soundcloud:
         'https://soundcloud.com/dysphemic0/sets/apollo-feat-yiani-treweeke',
+      appleMusic:
+        'https://music.apple.com/us/album/apollo/1509171333?uo=4&app=apple+music',
+      iTunes:
+        'https://music.apple.com/us/album/apollo/1509171333?uo=4&app=itunes',
     },
   },
 ];
