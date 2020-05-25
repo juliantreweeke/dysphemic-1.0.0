@@ -8,17 +8,15 @@ if (process.env.ENVIRONMENT !== 'production') {
   dotenv.config();
 }
 
-const {
-  spaceId,
-  accessToken
-} = process.env;
+const { spaceId, accessToken } = process.env;
 
 module.exports = {
   siteMetadata: {
     title: 'Dysphemic',
     siteUrl: `https://www.dysphemic.com`,
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: '462740751155607',
@@ -48,11 +46,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-typescript-boilerplate',
-        short_name: 'starter',
+        name: 'dysphemic',
+        short_name: 'Dysphemic',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#109fe6',
+        theme_color: '#109fe6',
         display: 'minimal-ui',
         icon: './src/favicon.png',
       },

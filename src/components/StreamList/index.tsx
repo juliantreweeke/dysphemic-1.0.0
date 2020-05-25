@@ -18,7 +18,8 @@ const streamList: React.SFC<StreamListProps> = ({
   return (
     <Layout>
       <h1 className="streamList__header">
-        {data.title} - {data.type}
+        {data.title}
+        {data.type && ` - ${data.type}`}
       </h1>
       <div className="streamList">
         <img className="streamList__cover" src={data.image} />

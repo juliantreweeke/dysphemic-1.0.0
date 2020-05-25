@@ -8,7 +8,7 @@ interface Album {
   title: string;
   year: number;
   image: any;
-  type: string;
+  type?: string;
   links: {
     bandcamp?: string;
     spotify?: string;
@@ -43,9 +43,11 @@ class AlbumList extends React.PureComponent<AlbumListProps, {}> {
     return (
       <Fade>
         <ul className="album-list">
-          {sortedData.map((album: Album) => (
-            <Album key={album.id} data={album} />
-          ))}
+          {sortedData.map((album: Album) => {
+            if (album.type) {
+              return <Album key={album.id} data={album} />;
+            }
+          })}
         </ul>
       </Fade>
     );

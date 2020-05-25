@@ -8,7 +8,7 @@ interface AlbumProps {
     title: string;
     year: number;
     image: any;
-    type: string;
+    type?: string;
     links: {
       bandcamp?: string;
       spotify?: string;

@@ -212,4 +212,18 @@ export const musicList = [
         'https://music.apple.com/us/album/apollo/1509171333?uo=4&app=itunes',
     },
   },
+  {
+    id: 'deserthawk',
+    title: 'Desert Hawk',
+    year: 2020,
+    image: apolloImage,
+    links: {
+      bandcamp:
+        'https://dysphemic.bandcamp.com/track/desert-hawk-feat-yiani-treweeke',
+      spotify:
+        'https://open.spotify.com/album/5BzVIWvPutiWca4N7YvN1Y?highlight=spotify:track:33UD5ajdAwLVjs6DpTIx0I',
+      soundcloud:
+        'https://soundcloud.com/dysphemic0/desert-hawk-feat-yiani-treweeke',
+    },
+  },
 ];

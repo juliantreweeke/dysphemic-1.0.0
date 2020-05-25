@@ -53,6 +53,9 @@ const albumRoutes = [
   {
     id: 'apollo',
   },
+  {
+    id: 'deserthawk',
+  },
 ];
 
 exports.createPages = ({ actions: { createPage } }) => {
