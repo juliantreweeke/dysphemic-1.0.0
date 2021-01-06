@@ -17,17 +17,18 @@ const contactForm: React.SFC = () => {
           <input type="hidden" name="form-name" value="contact" />
           <div className="contact-form__field">
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" data-cy="name" />
           </div>
           <div className="contact-form__field">
             <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" />
+            <input type="text" name="email" id="email" data-cy="email" />
           </div>
           <div className="contact-form__field">
             <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" rows={6} />
+            <textarea name="message" id="message" rows={6} data-cy="message" />
           </div>
           <input
+            data-cy="submit"
             type="submit"
             value="Send Message"
             className="contact-form__submit"

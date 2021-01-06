@@ -39,6 +39,7 @@ const links: React.SFC<LinksProps> = ({ data }) => {
                 key={link.id}
                 href={url}
                 target="_blank"
+                data-cy={link.id}
               >
                 <li>
                   <img className="streamList__logo" src={link.image} />

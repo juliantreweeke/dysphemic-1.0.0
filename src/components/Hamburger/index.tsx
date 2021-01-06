@@ -8,7 +8,11 @@ interface HamburgerProps {
 
 const hamburger: React.SFC<HamburgerProps> = ({ open, toggleOpen }) => {
   return (
-    <div onClick={toggleOpen} className={`hamburger ${open ? 'open' : ''}`}>
+    <div
+      data-cy="burger"
+      onClick={toggleOpen}
+      className={`hamburger ${open ? 'open' : ''}`}
+    >
       <span />
       <span />
       <span />

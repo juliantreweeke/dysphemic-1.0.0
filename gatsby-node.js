@@ -56,6 +56,9 @@ const albumRoutes = [
   {
     id: 'deserthawk',
   },
+  {
+    id: 'transdimensional-octagon',
+  },
 ];
 
 exports.createPages = ({ actions: { createPage } }) => {

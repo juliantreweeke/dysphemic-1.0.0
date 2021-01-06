@@ -13,6 +13,7 @@ const slothImage = require('../src/images/covers/sloth.jpg');
 const androidsImage = require('../src/images/covers/androids.jpg');
 const mindbanditImage = require('../src/images/covers/mindbandit.jpg');
 const apolloImage = require('../src/images/covers/apollo.jpg');
+const octagonImage = require('../src/images/covers/TransdimensionalOctagon.jpg');
 const comingSoon = require('../src/images/covers/mindbanditblur.jpg');
 
 export const musicList = [
@@ -224,6 +225,18 @@ export const musicList = [
         'https://open.spotify.com/album/5BzVIWvPutiWca4N7YvN1Y?highlight=spotify:track:33UD5ajdAwLVjs6DpTIx0I',
       soundcloud:
         'https://soundcloud.com/dysphemic0/desert-hawk-feat-yiani-treweeke',
+    },
+  },
+  {
+    id: 'transdimensional-octagon',
+    title: 'Transdimensional Octagon',
+    type: 'EP',
+    year: 2021,
+    image: octagonImage,
+    links: {
+      bandcamp: 'https://dysphemic.bandcamp.com/album/transdimensional-octagon',
+      spotify:
+        'https://distrokid.com/hyperfollow/dysphemic/transdimensional-octagon',
     },
   },
 ];

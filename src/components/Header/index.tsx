@@ -18,27 +18,23 @@ const corona = true;
 const navigation = (
   <ul>
     <li>
-      <Link activeClassName="active" to="/">
+      <Link data-cy="home" activeClassName="active" to="/">
         HOME
       </Link>
     </li>
     <li>
-      <Link activeClassName="active" to="/music/">
+      <Link data-cy="music" activeClassName="active" to="/music/">
         MUSIC
       </Link>
     </li>
     <li>
-      <Link activeClassName="active" to="/about/">
+      <Link data-cy="about" activeClassName="active" to="/about/">
         ABOUT
       </Link>
     </li>
     {!corona && (
       <li>
-        <a
-          activeClassName="active"
-          href="https://dysphemic.myshopify.com"
-          target="_blank"
-        >
+        <a href="https://dysphemic.myshopify.com" target="_blank">
           MERCH
         </a>
       </li>
@@ -51,7 +47,7 @@ const navigation = (
       </li>
     )}
     <li>
-      <Link activeClassName="active" to="/contact/">
+      <Link data-cy="contact" activeClassName="active" to="/contact/">
         CONTACT
       </Link>
     </li>
@@ -82,7 +78,7 @@ class Header extends React.PureComponent<HeaderProps> {
           >
             <div className="header__nav-mobile-open-content">
               {navigation}
-              <IconLinks height={30} />
+              <IconLinks height={30} navigationArea="header" />
             </div>
           </nav>
         </div>

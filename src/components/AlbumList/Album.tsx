@@ -24,7 +24,7 @@ const album: React.SFC<AlbumProps> = ({ data }) => {
     data.title.length > 24 ? `${data.title.substring(0, 24)}...` : data.title;
 
   return (
-    <li className="album">
+    <li className="album" data-cy={data.title}>
       <span className="album__bottom-border">
         <Link to={`/stream/${data.id}`}>
           <div className="album__info">

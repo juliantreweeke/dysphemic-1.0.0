@@ -12,28 +12,46 @@ import ITunes from '../../../svgs/iTunes.svg';
 interface IconLinksProps {
   colour?: string;
   height?: number;
+  navigationArea?: string;
 }
 
-const iconLinks: React.SFC<IconLinksProps> = ({ colour, height }) => {
+const iconLinks: React.SFC<IconLinksProps> = ({
+  colour,
+  height,
+  navigationArea,
+}) => {
   return (
     <ul className="iconLinks">
       <li>
-        <a target="_blank" href="https://www.facebook.com/Dysphemicmusic/">
+        <a
+          data-cy={`facebook-${navigationArea}`}
+          target="_blank"
+          href="https://www.facebook.com/Dysphemicmusic/"
+        >
           <Facebook height={height} fill={colour} />
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://www.instagram.com/dysphemic1/">
+        <a
+          data-cy={`instagram-${navigationArea}`}
+          target="_blank"
+          href="https://www.instagram.com/dysphemic1/"
+        >
           <Instagram height={height} fill={colour} />
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://twitter.com/dysphemic">
+        <a
+          data-cy={`twitter-${navigationArea}`}
+          target="_blank"
+          href="https://twitter.com/dysphemic"
+        >
           <Twitter height={height} fill={colour} />
         </a>
       </li>
       <li>
         <a
+          data-cy={`spotify-${navigationArea}`}
           target="_blank"
           href="https://open.spotify.com/artist/4lw0QYSR9txxIDgpTdeitX"
         >
@@ -41,12 +59,17 @@ const iconLinks: React.SFC<IconLinksProps> = ({ colour, height }) => {
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://soundcloud.com/dysphemic0">
+        <a
+          data-cy={`soundcloud-${navigationArea}`}
+          target="_blank"
+          href="https://soundcloud.com/dysphemic0"
+        >
           <Soundcloud height={height} fill={colour} />
         </a>
       </li>
       <li>
         <a
+          data-cy={`youtube-${navigationArea}`}
           target="_blank"
           href="https://www.youtube.com/channel/UCCXBlXT3PN2yH2TP3phVHIA"
         >
@@ -54,12 +77,17 @@ const iconLinks: React.SFC<IconLinksProps> = ({ colour, height }) => {
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://dysphemic.bandcamp.com/">
+        <a
+          data-cy={`bandcamp-${navigationArea}`}
+          target="_blank"
+          href="https://dysphemic.bandcamp.com/"
+        >
           <Bandcamp height={height} fill={colour} />
         </a>
       </li>
       <li>
         <a
+          data-cy={`itunes-${navigationArea}`}
           target="_blank"
           href="https://itunes.apple.com/us/artist/dysphemic/262642513"
         >
