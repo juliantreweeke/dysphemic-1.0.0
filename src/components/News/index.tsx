@@ -4,7 +4,7 @@ import Video from '../Video/';
 import Fade from 'react-reveal/Fade';
 import './News.scss';
 
-const apolloImage = require('../../images/covers/TransdimensionalOctagon.jpg');
+const newsImage = require('../../images/covers/fire-breather-emergence.jpeg');
 
 const news: React.SFC = () => {
   return (
@@ -13,20 +13,17 @@ const news: React.SFC = () => {
       <div className="news">
         <section className="news__section">
           <div className="news__section__content">
-            <img className="news__section__image" src={apolloImage} />
+            <img className="news__section__image" src={newsImage} />
             <div className="news__section__text">
-              <h1>Transdimensional Octagon - Dropping soon</h1>
+              <h1>Fire breather</h1>
               <div className="download-link-container">
-                <Link
-                  className="download-link"
-                  to="/stream/transdimensional-octagon"
-                >
-                  Presave/Pre-order
+                <Link className="download-link" to="/stream/fire-breather">
+                  Stream Here
                 </Link>
                 <div className="download-link-description">
                   <p>
-                    The soundtrack to a future where humans worship an Octagon
-                    shaped spaceship.
+                    From the Emergence compilation Curated by Clozee and
+                    released by Gravitas Recordings.
                   </p>
                 </div>
               </div>

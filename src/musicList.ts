@@ -14,6 +14,7 @@ const androidsImage = require('../src/images/covers/androids.jpg');
 const mindbanditImage = require('../src/images/covers/mindbandit.jpg');
 const apolloImage = require('../src/images/covers/apollo.jpg');
 const octagonImage = require('../src/images/covers/TransdimensionalOctagon.jpg');
+const fireBreatherImage = require('../src/images/covers/fire-breather-emergence.jpeg');
 const comingSoon = require('../src/images/covers/mindbanditblur.jpg');
 
 export const musicList = [
@@ -236,7 +237,22 @@ export const musicList = [
     links: {
       bandcamp: 'https://dysphemic.bandcamp.com/album/transdimensional-octagon',
       spotify:
-        'https://distrokid.com/hyperfollow/dysphemic/transdimensional-octagon',
+        'https://open.spotify.com/album/6HKswyMKvKNt66sA9ycBe1',
+        appleMusic: 
+        'https://music.apple.com/us/album/transdimensional-octagon-single/1546006974?uo=4',
+    },
+  },
+  {
+    id: 'fire-breather',
+    title: 'Fire Breather',
+    type: 'Single',
+    year: 2021,
+    image: fireBreatherImage,
+    links: {
+      bandcamp: 'https://music.gravitasrecordings.com/track/fire-breather-feat-yiani-treweeke',
+      spotify:
+        'https://open.spotify.com/album/1vSlpMSeggu5saLZoDO6nK',
+      beatport: 'https://www.beatport.com/release/fire-breather-feat-yiani-treweeke/3276670',
     },
   },
 ];

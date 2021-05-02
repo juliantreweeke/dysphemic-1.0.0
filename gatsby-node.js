@@ -59,6 +59,9 @@ const albumRoutes = [
   {
     id: 'transdimensional-octagon',
   },
+  {
+    id: 'fire-breather',
+  },
 ];
 
 exports.createPages = ({ actions: { createPage } }) => {
