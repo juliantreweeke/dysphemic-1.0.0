@@ -63,6 +63,10 @@ class Layout extends React.Component<LayoutProps, {}> {
                 title={siteMetadata.title}
                 meta={[
                   {
+                    name: 'facebook-domain-verification',
+                    content: 'g1kursbbf2vwz8hhawwi4d5a9dax4g',
+                  },
+                  {
                     property: 'fb:app_id',
                     content: '2854549507920170',
                   },
@@ -86,6 +90,7 @@ class Layout extends React.Component<LayoutProps, {}> {
                   {
                     property: 'og:image',
                     content:
+                      // tslint:disable-next-line:max-line-length
                       'https://www.dysphemic.com/static/apollo-fcdb6c2f34c4605853d3e28eb721afe0.jpg',
                   },
                   {
@@ -96,7 +101,8 @@ class Layout extends React.Component<LayoutProps, {}> {
                   {
                     name: 'keywords',
                     content:
-                      'dubstep, trap, edm, drum and bass,dnb, music, glitch,idm,downloads,free, world,bass,glitch hop, hip hop,music producer',
+                      // tslint:disable-next-line:max-line-length
+                      'dubstep, trap, edm, drum and bass,dnb, music, glitch,idm,downloads,free, world,bass,glitch hop, hip hop,music producer, tutorials, cubase',
                   },
                 ]}
               >
