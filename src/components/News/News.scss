@@ -4,10 +4,6 @@
 
     margin-bottom: 64px;
 
-    h1,
-    h2 {
-        text-align: left;
-    }
 
     .download-link-container {
         margin-top: 16px;
@@ -21,11 +17,11 @@
 
     .download-link {
         font-weight: bold;
-        font-size: 30px;
-        color: $white;
+        font-size: 24px;
+        color: $hoverText;
 
         &:hover {
-            color: $hoverText;
+            color: white;
         }
     }
 
@@ -48,8 +44,12 @@
         }
 
         &__text {
+            flex-grow: 1;
             margin-left: 40px;
             margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
         }
 
         p {
@@ -74,7 +74,6 @@
 
         h2 {
             text-align: center;
-
         }
 
         &__text {

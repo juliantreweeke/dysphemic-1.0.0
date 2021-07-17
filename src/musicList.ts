@@ -15,6 +15,7 @@ const mindbanditImage = require('../src/images/covers/mindbandit.jpg');
 const apolloImage = require('../src/images/covers/apollo.jpg');
 const octagonImage = require('../src/images/covers/TransdimensionalOctagon.jpg');
 const fireBreatherImage = require('../src/images/covers/fire-breather-emergence.jpeg');
+const faerytale = require('../src/images/covers/Faerytale.jpg');
 const comingSoon = require('../src/images/covers/mindbanditblur.jpg');
 
 export const musicList = [
@@ -253,6 +254,17 @@ export const musicList = [
       spotify: 'https://open.spotify.com/album/1vSlpMSeggu5saLZoDO6nK',
       beatport:
         'https://www.beatport.com/release/fire-breather-feat-yiani-treweeke/3276670',
+    },
+  },
+  {
+    id: 'faerytale',
+    title: 'Faerytale',
+    type: 'Single',
+    year: 2021,
+    image: faerytale,
+    links: {
+      spotify:
+        'https://distrokid.com/hyperfollow/dysphemic/faerytale-feat-yiani-treweeke',
     },
   },
 ];

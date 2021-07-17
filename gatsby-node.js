@@ -62,6 +62,9 @@ const albumRoutes = [
   {
     id: 'fire-breather',
   },
+  {
+    id: 'faerytale',
+  },
 ];
 
 exports.createPages = ({ actions: { createPage } }) => {

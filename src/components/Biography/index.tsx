@@ -19,35 +19,26 @@ const biography: React.SFC = () => {
         </div>
         <div className="biography__text">
           <p>
-            If aliens were to visit cavemen and give them the gift of bass,
-            Dysphemic would be the soundtrack.
-          </p>
-          <p>
             Dysphemic appears to know no boundaries when it comes to genre or
             tempo. A single track could be defined as Dubstep, House, Drum and
-            Bass, even Middle Eastern Trap, but no matter the style, the sound
-            is always bass heavy, epic, melodic & cinematic.
+            Bass, but no matter the style, the sound is always bass heavy, epic,
+            melodic & cinematic. The fusion of traditional instruments and
+            futuristic sound design pushes the limit of what we know electronic
+            music to be to create an unforgettable journey for the listener.
           </p>
           <p>
             From being credited by Vice Magazine for pioneering classical
             Dubstep to having his album Zeus listed as one one of the most
             overlooked albums of 2017 by Reddit, Dysphemic has continued to
             expand the minds of listeners around the globe with his unique take
-            on dance music. His track ‘Snake King’ was recently used by Go Pro
-            and broadcast to millions of viewers during the 2019 Tour de France.
+            on dance music. His track ‘Snake King’ was used by Go Pro and
+            broadcast to millions of viewers during the 2019 Tour de France.
           </p>
           <p>
-            The newest release, ‘Apollo’ is a hybrid of mediterranean guitar
-            styles, gothic keyboards and arabic world bass created with longtime
-            collaborator, Yiani Treweeke on keys and guitar.
-          </p>
-          <p>
-            This release sees the two brothers find influence from their
-            families Egyptian Greek roots and their psychedelic upbringing in
-            the Australian Blue Mountains to create a soundtrack of an ancient
-            future. From the tribal drum and bass vibes of Desert Hawk, to the
-            spacey House wobbles of Lost Brothers, Apollo will enlist your
-            psyche on a mission through the ancient terrains of the cosmos.
+            His latest release, ‘Faerytale’ is an electro house track with long
+            time collaborator and brother Yiani Treweeke who plays piano and
+            guitar on the single. It again shows off the producer’s versatility
+            and ability to experiment while keeping it true to his unique style.
           </p>
         </div>
       </div>
