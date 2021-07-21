@@ -263,8 +263,12 @@ export const musicList = [
     year: 2021,
     image: faerytale,
     links: {
-      spotify:
-        'https://distrokid.com/hyperfollow/dysphemic/faerytale-feat-yiani-treweeke',
+      bandcamp: 'https://dysphemic.bandcamp.com/track/faerytale',
+      spotify: 'https://open.spotify.com/album/4Zs4PhyVQeLxn4TXXI8ON4',
+      appleMusic:
+        'https://music.apple.com/us/album/faerytale-feat-yiani-treweeke-single/1575141285?uo=4',
+      iTunes:
+        'https://music.apple.com/us/album/faerytale-feat-yiani-treweeke-single/1575141285?uo=4',
     },
   },
 ];

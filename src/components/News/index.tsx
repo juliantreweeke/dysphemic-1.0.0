@@ -14,10 +14,10 @@ const news: React.SFC = () => {
           <div className="news__section__content">
             <img className="news__section__image" src={newsImage} />
             <div className="news__section__text">
-              <h1>New single Faerytale dropping 21st July</h1>
+              <h1>New single Faerytale out now</h1>
               <div className="download-link-container">
                 <Link className="download-link" to="/stream/faerytale">
-                  Presave here
+                  Listen here
                 </Link>
               </div>
             </div>
